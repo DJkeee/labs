@@ -3,5 +3,4 @@ project(MEPHI_LAB)
 
 set(CMAKE_CXX_STANDARD 20)
 add_executable(MEPHI_LAB main.cpp
-        Pointers/UnqPtr.h
-        Pointers/ShrdPtr.h)
+)

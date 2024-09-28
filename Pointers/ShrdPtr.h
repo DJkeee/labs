@@ -1,48 +1,50 @@
 #ifndef MEPHI_LAB_SHRDPTR_H
 #define MEPHI_LAB_SHRDPTR_H
+
 #include "UnqPtr.h"
 
-template <typename T>
+template<typename T>
 class SharedPtr {
 private:
-UnqPtr<T> ptr;
-int* counter;
+    UnqPtr<T> ptr;
+    int *counter;
 
 public:
-SharedPtr();
+    SharedPtr();
 
-explicit SharedPtr(UnqPtr<T> p);
+    explicit SharedPtr(UnqPtr<T> p);
 
-SharedPtr(const SharedPtr& other);
+    SharedPtr(const SharedPtr &other);
 
-SharedPtr& operator=(const SharedPtr& other);
+    SharedPtr &operator=(const SharedPtr &other);
 
-~SharedPtr();
+    ~SharedPtr();
 
-T* get() const;
+    T *get() const;
 
-bool empty() const;
+    bool empty() const;
 
-T* operator->() const;
-T& operator*() const;
+    T *operator->() const;
+
+    T &operator*() const;
 };
 
-template <typename T>
+template<typename T>
 SharedPtr<T>::SharedPtr() :
-    ptr(UnqPtr<T>()), counter(new int(0)) {}
+        ptr(UnqPtr<T>()), counter(new int(0)) {}
 
-template <typename T>
+template<typename T>
 SharedPtr<T>::SharedPtr(UnqPtr<T> p) :
-    ptr(p), counter(new int(1)) {}
+        ptr(p), counter(new int(1)) {}
 
-template <typename T>
-SharedPtr<T>::SharedPtr(const SharedPtr& other) :
-    ptr(other.ptr), counter(other.counter) {
-        (*counter)++;
+template<typename T>
+SharedPtr<T>::SharedPtr(const SharedPtr &other) :
+        ptr(other.ptr), counter(other.counter) {
+    (*counter)++;
 }
 
-template <typename T>
-SharedPtr<T>& SharedPtr<T>::operator=(const SharedPtr& other) {
+template<typename T>
+SharedPtr<T> &SharedPtr<T>::operator=(const SharedPtr &other) {
     if (this != &other) {
         if (ptr) {
             (*counter)--;
@@ -59,7 +61,7 @@ SharedPtr<T>& SharedPtr<T>::operator=(const SharedPtr& other) {
     return *this;
 }
 
-template <typename T>
+template<typename T>
 SharedPtr<T>::~SharedPtr() {
     if (ptr) {
         (*counter)--;
@@ -69,23 +71,23 @@ SharedPtr<T>::~SharedPtr() {
     }
 }
 
-template <typename T>
-T* SharedPtr<T>::get() const {
+template<typename T>
+T *SharedPtr<T>::get() const {
     return ptr.get();
 }
 
-template <typename T>
+template<typename T>
 bool SharedPtr<T>::empty() const {
     return ptr.empty();
 }
 
-template <typename T>
-T* SharedPtr<T>::operator->() const {
+template<typename T>
+T *SharedPtr<T>::operator->() const {
     return ptr.operator->();
 }
 
-template <typename T>
-T& SharedPtr<T>::operator*() const {
+template<typename T>
+T &SharedPtr<T>::operator*() const {
     return ptr.operator*();
 }
 
