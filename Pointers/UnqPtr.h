@@ -4,28 +4,28 @@
 template <typename T>
 class UnqPtr {
 private:
-    T* ptr;
+T* ptr;
 
 public:
-    UnqPtr();
+UnqPtr();
 
-    explicit UnqPtr(T* p);
+explicit UnqPtr(T* p);
 
-    UnqPtr(const UnqPtr& other) = delete;
+UnqPtr(const UnqPtr& other) = delete;
 
-    UnqPtr& operator=(const UnqPtr& other) = delete;
+UnqPtr& operator=(const UnqPtr& other) = delete;
 
-    T* get() const;
+T* get() const;
 
-    bool empty() const;
+bool empty() const;
 
-    ~UnqPtr();
+~UnqPtr();
 
-    UnqPtr<T> release();
+UnqPtr<T> release();
 
-    T* operator->() const;
+T* operator->() const;
 
-    T& operator*() const;
+T& operator*() const;
 };
 
 //реализация методов

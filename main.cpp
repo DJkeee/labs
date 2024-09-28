@@ -1,6 +1,8 @@
 #include <iostream>
+#include "Pointers/UnqPtr.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    UnqPtr<int> ptr1(new int(5));
+    std::cout << *ptr1;
     return 0;
 }
