@@ -150,13 +150,13 @@ CMakeFiles/MEPHI_LAB.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- C:\Users\Dell\CLionProjects\labs\Sequence/Sequence.h \
- C:\Users\Dell\CLionProjects\labs\Sequence/Errors.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cinttypes \
+ C:\Users\Dell\CLionProjects\labs\Pointers/ShrdPtr.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/inttypes.h \
+ C:\Users\Dell\CLionProjects\labs\Pointers/UnqPtr.h \
+ C:\Users\Dell\CLionProjects\labs\Sequence/Sequence.h \
  C:\Users\Dell\CLionProjects\labs\Sequence/ArraySequence.h \
  C:\Users\Dell\CLionProjects\labs\Sequence/Sequence.h \
- C:\Users\Dell\CLionProjects\labs\Sequence/DinamicArray.h
+ C:\Users\Dell\CLionProjects\labs\Sequence/DinamicArray.h \
+ C:\Users\Dell\CLionProjects\labs\Sequence/Errors.h

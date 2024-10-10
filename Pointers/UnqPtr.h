@@ -18,8 +18,7 @@ public:
 
     UnqPtr& operator=(const UnqPtr &other) = delete;
 
-    UnqPtr& operator=(UnqPtr &&other)
-        : ptr(other.ptr) {
+    UnqPtr &operator=(UnqPtr &&other) {
         if (this != &other) {
             delete ptr;
             ptr = other.ptr;
@@ -40,5 +39,10 @@ public:
         return ptr;
     }
 };
+
+template<typename T, typename... Args>
+UnqPtr<T> makeUnq(Args&&... args) {
+    return UnqPtr<T>(new T(std::forward<Args>(args)...));
+}
 
 #endif //MEPHI_LAB_UNQPTR_H
