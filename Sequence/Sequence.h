@@ -5,7 +5,6 @@
 #ifndef LAB2_3_SEQUENCE_H
 #define LAB2_3_SEQUENCE_H
 
-#include "Errors.h"
 
 template<typename T>
 class Sequence {
@@ -18,7 +17,7 @@ public:
 
     virtual int getSize() const = 0;
 
-    virtual Sequence<T> *getSubsequence(int start, int end) const = 0;
+    virtual Sequence<T>* getSubsequence(int start, int end) const = 0;
 
     virtual void set(const T &item, int index) = 0;
 
@@ -28,7 +27,7 @@ public:
 
     virtual void insertAt(const T &item, int index) = 0;
 
-    virtual Sequence<T> *concat(const Sequence<T> &seq) const = 0;
+    virtual Sequence<T>* concat(const Sequence<T> &seq) const = 0;
 
     virtual bool operator==(const Sequence<T> &seq) const {
         if (this->getSize() != seq.getSize()) return false;
@@ -39,7 +38,6 @@ public:
 
         return true;
     }
-
 };
 
 

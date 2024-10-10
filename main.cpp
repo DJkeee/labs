@@ -1,8 +1,17 @@
 #include <iostream>
-#include "Pointers/UnqPtr.h"
+
+#include "Sequence/Sequence.h"
+#include "Sequence/ArraySequence.h"
+
 
 int main() {
-    UnqPtr<int> ptr1(new int(5));
-    std::cout << *ptr1;
-    return 0;
+
+
+ArraySequence<int> vec;
+Sequence<int>* seq = &vec;
+    seq->append(1);
+    seq->append(2);
+
+    std::cout << vec << std::endl;
+
 }

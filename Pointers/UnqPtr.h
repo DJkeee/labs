@@ -4,68 +4,41 @@
 template<typename T>
 class UnqPtr {
 private:
-    T *ptr;
+    T* ptr;
 
 public:
-    UnqPtr();
+    explicit UnqPtr(T* ptr) : ptr(ptr) {
+    }
 
-    explicit UnqPtr(T *p);
+    ~UnqPtr() {
+        delete ptr;
+    }
 
     UnqPtr(const UnqPtr &other) = delete;
 
-    UnqPtr &operator=(const UnqPtr &other) = delete;
+    UnqPtr& operator=(const UnqPtr &other) = delete;
 
-    T *get() const;
+    UnqPtr& operator=(UnqPtr &&other)
+        : ptr(other.ptr) {
+        if (this != &other) {
+            delete ptr;
+            ptr = other.ptr;
+            other.ptr = nullptr;
+        }
+        return *this;
+    }
 
-    bool empty() const;
+    T& operator*() const {
+        return *ptr;
+    }
 
-    ~UnqPtr();
+    T* operator->() const {
+        return ptr;
+    }
 
-    UnqPtr<T> release();
-
-    T *operator->() const;
-
-    T &operator*() const;
+    T* get() const {
+        return ptr;
+    }
 };
-
-//реализация методов
-template<typename T>
-UnqPtr<T>::UnqPtr() : ptr(nullptr) {}
-
-template<typename T>
-UnqPtr<T>::UnqPtr(T *p) : ptr(p) {}
-
-template<typename T>
-T *UnqPtr<T>::get() const {
-    return ptr;
-}
-
-template<typename T>
-bool UnqPtr<T>::empty() const {
-    return ptr == nullptr;
-}
-
-template<typename T>
-UnqPtr<T>::~UnqPtr() {
-    delete ptr;
-}
-
-template<typename T>
-UnqPtr<T> UnqPtr<T>::release() {
-    T *tmp = ptr;
-    ptr = nullptr;
-    return UnqPtr<T>(tmp);
-}
-
-template<typename T>
-T *UnqPtr<T>::operator->() const {
-    return ptr;
-}
-
-template<typename T>
-T &UnqPtr<T>::operator*() const {
-    return *ptr;
-}
-
 
 #endif //MEPHI_LAB_UNQPTR_H

@@ -2,24 +2,25 @@
 #define LAB2_3_DINAMICARRAY_H
 
 #include <stdexcept>
-#include <string>
 #include "Errors.h"
 
 template<typename T>
 class DynamicArray {
 private:
-    T *m_data = nullptr;
+    T* m_data = nullptr;
     int m_size = 0;
     int m_capacity = 0;
+
 public:
-    DynamicArray() : m_size(0), m_capacity(0) {}
+    DynamicArray() : m_size(0), m_capacity(0) {
+    }
 
     DynamicArray(int size) : m_size(size), m_capacity(size) {
         if (size <= 0) throw std::length_error(NEGATIVE_SIZE_MESSAGE);
         m_data = new T[size];
     }
 
-    DynamicArray(T *data, int size) : m_size(size), m_capacity(size) {
+    DynamicArray(T* data, int size) : m_size(size), m_capacity(size) {
         if (size <= 0) throw std::length_error(NEGATIVE_SIZE_MESSAGE);
 
         m_data = new T[size];
@@ -71,7 +72,7 @@ public:
         if (size <= 0) {
             throw std::length_error(NEGATIVE_SIZE_MESSAGE);
         }
-        T *newData = new T[size];
+        T* newData = new T[size];
 
         for (int i = 0; i < (m_size > size ? size : m_size); i++) {
             newData[i] = m_data[i];
@@ -96,7 +97,7 @@ public:
         return true;
     }
 
-    DynamicArray<T> &operator=(const DynamicArray<T> &array) {
+    DynamicArray<T>& operator=(const DynamicArray<T> &array) {
         if (this != &array) {
             delete[] m_data;
             m_size = array.m_size;

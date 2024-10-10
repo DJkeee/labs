@@ -11,10 +11,9 @@
 template<typename T>
 class ArraySequence : public Sequence<T> {
 protected:
-    DynamicArray<T> *m_array;
+    DynamicArray<T>* m_array;
 
 public:
-
     ArraySequence() {
         m_array = new DynamicArray<T>();
     }
@@ -23,11 +22,11 @@ public:
         m_array = new DynamicArray<T>(*seq.m_array);
     }
 
-    ArraySequence(DynamicArray<T> *array) {
+    ArraySequence(DynamicArray<T>* array) {
         m_array = array;
     }
 
-    ArraySequence(T *items, int size) {
+    ArraySequence(T* items, int size) {
         m_array = new DynamicArray<T>(items, size);
     }
 
@@ -60,7 +59,7 @@ public:
         m_array->set(item, index);
     }
 
-    virtual ArraySequence<T> *getSubsequence(int start, int end) const override {
+    virtual ArraySequence<T>* getSubsequence(int start, int end) const override {
         if (start < 0 || start >= this->getSize()) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
         if (end < 0 || end >= this->getSize()) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
         if (start > end) throw std::logic_error("Think about your indexes bro\n");
@@ -69,7 +68,7 @@ public:
         for (int i = 0; i < end - start + 1; i++)
             subArray[i] = this->m_array->get(i + start);
 
-        ArraySequence<T> *subSequence = new ArraySequence<T>(subArray, end - start);
+        ArraySequence<T>* subSequence = new ArraySequence<T>(subArray, end - start);
 
         return subSequence;
     }
@@ -108,9 +107,9 @@ public:
     }
 
 
-    virtual ArraySequence<T> *concat(const Sequence<T> &seq) const override {
-        DynamicArray<T> *array = new DynamicArray<T>(this->getSize() + seq.getSize());
-        ArraySequence<T> *newSequence = new ArraySequence<T>(array);
+    virtual ArraySequence<T>* concat(const Sequence<T> &seq) const override {
+        DynamicArray<T>* array = new DynamicArray<T>(this->getSize() + seq.getSize());
+        ArraySequence<T>* newSequence = new ArraySequence<T>(array);
         for (int i = 0; i < this->getSize(); i++)
             newSequence->set(this->get(i), i);
 
@@ -120,6 +119,12 @@ public:
         return newSequence;
     }
 
+    friend std::ostream& operator<<(std::ostream &os, const ArraySequence<T> &seq) {
+        for (int i = 0; i < seq.getSize(); i++)
+            os << seq.get(i) << " ";
+        return os;
+    }
 };
+
 
 #endif //LAB2_3_ARRAYSEQUENCE_H
