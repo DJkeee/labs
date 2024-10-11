@@ -5,9 +5,8 @@
 #ifndef LAB2_3_SEQUENCE_H
 #define LAB2_3_SEQUENCE_H
 
-
 template<typename T>
-class Sequence {
+class SmartSeq {
 public:
     virtual T getFirst() const = 0;
 
@@ -17,7 +16,7 @@ public:
 
     virtual int getSize() const = 0;
 
-    virtual Sequence<T>* getSubsequence(int start, int end) const = 0;
+    virtual SmartSeq<T>* getSubsequence(int start, int end) const = 0;
 
     virtual void set(const T &item, int index) = 0;
 
@@ -27,9 +26,9 @@ public:
 
     virtual void insertAt(const T &item, int index) = 0;
 
-    virtual Sequence<T>* concat(const Sequence<T> &seq) const = 0;
+    virtual SmartSeq<T>* concat(const SmartSeq<T> &seq) const = 0;
 
-    virtual bool operator==(const Sequence<T> &seq) const {
+    virtual bool operator==(const SmartSeq<T> &seq) const {
         if (this->getSize() != seq.getSize()) return false;
 
         for (int i = 0; i < this->getSize(); i++) {

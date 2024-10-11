@@ -7,4 +7,5 @@ add_executable(MEPHI_LAB main.cpp
         Pointers/UnqPtr.h
         Sequence/List.h
         Sequence/ListSequence.h
+        Sequence/ArraySequence.h
 )

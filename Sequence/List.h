@@ -3,7 +3,6 @@
 
 #include "Errors.h"
 #include <stdexcept>
-#include <string>
 
 template<typename T>
 class LinkedList {

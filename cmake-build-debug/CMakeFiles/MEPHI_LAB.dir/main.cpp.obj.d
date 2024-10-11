@@ -175,7 +175,6 @@ CMakeFiles/MEPHI_LAB.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
  C:\Users\Dell\CLionProjects\labs\Pointers/ShrdPtr.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
- C:\Users\Dell\CLionProjects\labs\Sequence/Sequence.h \
  C:\Users\Dell\CLionProjects\labs\Sequence/ArraySequence.h \
  C:\Users\Dell\CLionProjects\labs\Sequence/Sequence.h \
  C:\Users\Dell\CLionProjects\labs\Sequence/DinamicArray.h \

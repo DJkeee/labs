@@ -6,7 +6,7 @@
 #include "List.h"
 
 template<typename T>
-class ListSequence : public Sequence<T> {
+class ListSequence : public SmartSeq<T> {
 protected:
     LinkedList<T>* m_list;
 
@@ -73,7 +73,7 @@ public:
         m_list->insertAt(item, index);
     }
 
-    ListSequence<T>* concat(const Sequence<T> &seq) const override {
+    ListSequence<T>* concat(const SmartSeq<T> &seq) const override {
         ListSequence<T>* newSequence = new ListSequence<T>();
 
         for (int i = 0; i < this->getSize(); i++)

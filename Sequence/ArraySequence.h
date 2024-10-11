@@ -9,7 +9,7 @@
 #include "DinamicArray.h"
 
 template<typename T>
-class ArraySequence : public Sequence<T> {
+class ArraySequence : public SmartSeq<T> {
 protected:
     DynamicArray<T>* m_array;
 
@@ -73,7 +73,7 @@ public:
         return subSequence;
     }
 
-    virtual void append(const T &item) override {
+     void append(const T &item) override {
         m_array->resize(this->getSize() + 1);
         m_array->set(item, this->getSize() - 1);
     }
@@ -107,7 +107,7 @@ public:
     }
 
 
-    virtual ArraySequence<T>* concat(const Sequence<T> &seq) const override {
+    virtual ArraySequence<T>* concat(const SmartSeq<T> &seq) const override {
         DynamicArray<T>* array = new DynamicArray<T>(this->getSize() + seq.getSize());
         ArraySequence<T>* newSequence = new ArraySequence<T>(array);
         for (int i = 0; i < this->getSize(); i++)
