@@ -1,3 +1,0 @@
-C:/Users/Dell/CLionProjects/labs/cmake-build-debug/CMakeFiles/MEPHI_LAB.dir
-C:/Users/Dell/CLionProjects/labs/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Dell/CLionProjects/labs/cmake-build-debug/CMakeFiles/rebuild_cache.dir

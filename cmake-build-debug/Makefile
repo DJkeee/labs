@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MEPHI_LAB
+# Target rules for targets named MyExecutable
 
 # Build rule for target.
-MEPHI_LAB: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MEPHI_LAB
-.PHONY : MEPHI_LAB
+MyExecutable: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyExecutable
+.PHONY : MyExecutable
 
 # fast build rule for target.
-MEPHI_LAB/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MEPHI_LAB.dir\build.make CMakeFiles/MEPHI_LAB.dir/build
-.PHONY : MEPHI_LAB/fast
+MyExecutable/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyExecutable.dir\build.make CMakeFiles/MyExecutable.dir/build
+.PHONY : MyExecutable/fast
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MEPHI_LAB.dir\build.make CMakeFiles/MEPHI_LAB.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyExecutable.dir\build.make CMakeFiles/MyExecutable.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -141,7 +141,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MEPHI_LAB.dir\build.make CMakeFiles/MEPHI_LAB.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyExecutable.dir\build.make CMakeFiles/MyExecutable.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -149,7 +149,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MEPHI_LAB.dir\build.make CMakeFiles/MEPHI_LAB.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyExecutable.dir\build.make CMakeFiles/MyExecutable.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... MEPHI_LAB
+	@echo ... MyExecutable
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

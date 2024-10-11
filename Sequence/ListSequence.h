@@ -6,7 +6,7 @@
 #include "List.h"
 
 template<typename T>
-class ListSequence : public SmartSeq<T> {
+class ListSequence : public Sequence<T> {
 protected:
     LinkedList<T>* m_list;
 
@@ -51,12 +51,6 @@ public:
         return m_list->getSize();
     }
 
-    ListSequence<T>* getSubsequence(int start, int end) const override {
-        LinkedList<T>* subList = this->m_list->getSublist(start, end);
-        ListSequence<T>* seq = new ListSequence<T>(subList);
-        return seq;
-    }
-
     void set(const T &item, int index) override {
         m_list->set(item, index);
     }
@@ -71,18 +65,6 @@ public:
 
     void insertAt(const T &item, int index) override {
         m_list->insertAt(item, index);
-    }
-
-    ListSequence<T>* concat(const SmartSeq<T> &seq) const override {
-        ListSequence<T>* newSequence = new ListSequence<T>();
-
-        for (int i = 0; i < this->getSize(); i++)
-            newSequence->append(this->get(i));
-
-        for (int i = 0; i < seq.getSize(); i++)
-            newSequence->append(seq.get(i));
-
-        return newSequence;
     }
 
     friend std::ostream& operator<<(std::ostream &os, const ListSequence<T> &seq) {

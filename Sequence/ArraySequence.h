@@ -9,34 +9,32 @@
 #include "DinamicArray.h"
 
 template<typename T>
-class ArraySequence : public SmartSeq<T> {
+class ArraySequence : public Sequence<T> {
 protected:
-    DynamicArray<T>* m_array;
+    std::unique_ptr<DynamicArray<T> > m_array;
 
 public:
     ArraySequence() {
-        m_array = new DynamicArray<T>();
+        m_array = std::make_unique<DynamicArray<T> >();
     }
 
-    ArraySequence(const ArraySequence<T> &seq) {
-        m_array = new DynamicArray<T>(*seq.m_array);
+    ArraySequence(const ArraySequence<T>& seq) {
+        m_array = std::make_unique<DynamicArray<T> >(*seq.m_array);
     }
 
     ArraySequence(DynamicArray<T>* array) {
-        m_array = array;
+        m_array = std::unique_ptr<DynamicArray<T> >(array);
     }
 
     ArraySequence(T* items, int size) {
-        m_array = new DynamicArray<T>(items, size);
+        m_array = std::make_unique<DynamicArray<T> >(items, size);
     }
 
     ArraySequence(int size) {
-        m_array = new DynamicArray<T>(size);
+        m_array = std::make_unique<DynamicArray<T> >(size);
     }
 
-    virtual ~ArraySequence() {
-        delete m_array;
-    }
+    virtual ~ArraySequence() = default; // no need to delete m_array, unique_ptr will handle it
 
     virtual T getFirst() const override {
         return m_array->get(0);
@@ -54,32 +52,17 @@ public:
         return m_array->getSize();
     }
 
-    virtual void set(const T &item, int index) override {
+    virtual void set(const T& item, int index) override {
         if (index < 0 || index >= this->getSize()) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
         m_array->set(item, index);
     }
 
-    virtual ArraySequence<T>* getSubsequence(int start, int end) const override {
-        if (start < 0 || start >= this->getSize()) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
-        if (end < 0 || end >= this->getSize()) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
-        if (start > end) throw std::logic_error("Think about your indexes bro\n");
-
-        T subArray[end - start + 1];
-        for (int i = 0; i < end - start + 1; i++)
-            subArray[i] = this->m_array->get(i + start);
-
-        ArraySequence<T>* subSequence = new ArraySequence<T>(subArray, end - start);
-
-        return subSequence;
-    }
-
-     void append(const T &item) override {
+    void append(const T& item) override {
         m_array->resize(this->getSize() + 1);
         m_array->set(item, this->getSize() - 1);
     }
 
-
-    virtual void prepend(const T &item) override {
+    virtual void prepend(const T& item) override {
         m_array->resize(this->getSize() + 1);
         T temp1 = m_array->get(0);
         T temp2;
@@ -91,8 +74,7 @@ public:
         m_array->set(item, 0);
     }
 
-
-    virtual void insertAt(const T &item, int index) override {
+    virtual void insertAt(const T& item, int index) override {
         if (index < 0 || index > this->getSize()) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
 
         m_array->resize(this->getSize() + 1);
@@ -106,20 +88,7 @@ public:
         m_array->set(item, index);
     }
 
-
-    virtual ArraySequence<T>* concat(const SmartSeq<T> &seq) const override {
-        DynamicArray<T>* array = new DynamicArray<T>(this->getSize() + seq.getSize());
-        ArraySequence<T>* newSequence = new ArraySequence<T>(array);
-        for (int i = 0; i < this->getSize(); i++)
-            newSequence->set(this->get(i), i);
-
-        for (int i = 0; i < seq.getSize(); i++)
-            newSequence->set(seq.get(i), i + this->getSize());
-
-        return newSequence;
-    }
-
-    friend std::ostream& operator<<(std::ostream &os, const ArraySequence<T> &seq) {
+    friend std::ostream& operator<<(std::ostream& os, const ArraySequence<T>& seq) {
         for (int i = 0; i < seq.getSize(); i++)
             os << seq.get(i) << " ";
         return os;
