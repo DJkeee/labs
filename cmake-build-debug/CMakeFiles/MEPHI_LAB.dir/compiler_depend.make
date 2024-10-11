@@ -156,7 +156,6 @@ CMakeFiles/MEPHI_LAB.dir/main.cpp.obj: C:/Users/Dell/CLionProjects/labs/main.cpp
   C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/Dell/CLionProjects/labs/Pointers/ShrdPtr.h \
-  C:/Users/Dell/CLionProjects/labs/Pointers/UnqPtr.h \
   C:/Users/Dell/CLionProjects/labs/Sequence/ArraySequence.h \
   C:/Users/Dell/CLionProjects/labs/Sequence/DinamicArray.h \
   C:/Users/Dell/CLionProjects/labs/Sequence/Errors.h \
@@ -474,8 +473,6 @@ C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include
 C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/wctype.h:
 
 C:/Users/Dell/CLionProjects/labs/Pointers/ShrdPtr.h:
-
-C:/Users/Dell/CLionProjects/labs/Pointers/UnqPtr.h:
 
 C:/Users/Dell/CLionProjects/labs/Sequence/ArraySequence.h:
 

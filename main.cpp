@@ -1,18 +1,17 @@
 #include <iostream>
+#include <memory>
 
 #include "Pointers/ShrdPtr.h"
 #include "Sequence/Sequence.h"
 #include "Sequence/ArraySequence.h"
 
+using namespace std;
 
 int main() {
-    ArraySequence<int> vec;
-    Sequence<int>* seq = &vec;
-    seq->append(1);
-    seq->append(2);
-    std::cout << vec << std::endl;
+    int a = 5;
+    ShrdPtr<int> ptr = makeShrd<int>(a); // Создаем объект ShrdPtr, ссылающийся на a
+    std::cout << ptr.getCount() << std::endl; // Вывод: 1
 
-    UnqPtr<ArraySequence<int>> ptr = makeUnq<ArraySequence<int>>(vec);
-    std::cout << *ptr << std::endl;
-
+    ShrdPtr<int> ptr2 = ptr; // Копирование ShrdPtr
+    std::cout << ptr2.getCount() << std::endl; // Вывод: 2
 }

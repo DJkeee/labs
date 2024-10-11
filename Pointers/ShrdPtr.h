@@ -3,25 +3,16 @@
 
 #include <cstdint>
 
-#include "UnqPtr.h"
-
 template<typename T>
 class ShrdPtr {
 private:
     T* ptr;
-    uint64_t* m_count{};
-
-    class ControlBlock {
-    public:
-        T value;
-        uint64_t m_count;
-    };
+    uint64_t* m_count;
 
     template<typename U, typename... Args>
-    friend ShrdPtr<U> makeShrd(Args&&...);
+    friend ShrdPtr<U> makeShrd(Args&&... args);
 
-    ShrdPtr(ControlBlock* cb) {
-
+    ShrdPtr(T* ptr, uint64_t* m_count) : ptr(ptr), m_count(m_count) {
     }
 
 public:
@@ -31,6 +22,8 @@ public:
     }
 
     ShrdPtr(const ShrdPtr& other) {
+        ptr = other.ptr;
+        m_count = other.m_count;
         ++(*m_count);
     }
 
@@ -57,6 +50,7 @@ public:
         }
         return *this;
     }
+
 
     ShrdPtr(ShrdPtr&& other) noexcept {
         ptr = other.ptr;
@@ -96,10 +90,9 @@ public:
     }
 };
 
-
 template<typename T, typename... Args>
 ShrdPtr<T> makeShrd(Args&&... args) {
-    auto* p = new typename ShrdPtr<T>::ShrdPtr(new T(std::forward<Args>(args)...),1);
+    auto* p = new T(std::forward<Args>(args)...);
     return ShrdPtr<T>(p);
 }
 
