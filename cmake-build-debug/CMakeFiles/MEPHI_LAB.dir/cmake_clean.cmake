@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MEPHI_LAB.dir/main.cpp.obj"
-  "CMakeFiles/MEPHI_LAB.dir/main.cpp.obj.d"
-  "MEPHI_LAB.exe"
-  "MEPHI_LAB.exe.manifest"
+  "CMakeFiles/MEPHI_LAB.dir/main.cpp.o"
+  "CMakeFiles/MEPHI_LAB.dir/main.cpp.o.d"
+  "MEPHI_LAB"
   "MEPHI_LAB.pdb"
-  "libMEPHI_LAB.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

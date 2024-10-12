@@ -7,34 +7,29 @@
 
 #include "Sequence.h"
 #include "DinamicArray.h"
+#include "../Pointers/UnqPtr.h"
 
 template<typename T>
 class ArraySequence : public Sequence<T> {
 protected:
-    std::unique_ptr<DynamicArray<T> > m_array;
+    UnqPtr<DynamicArray<T>> m_array;
 
 public:
-    ArraySequence() {
-        m_array = std::make_unique<DynamicArray<T> >();
-    }
+    ArraySequence() : m_array(makeUnq<DynamicArray<T>>()) {}
 
-    ArraySequence(const ArraySequence<T>& seq) {
-        m_array = std::make_unique<DynamicArray<T> >(*seq.m_array);
-    }
+    ArraySequence(const ArraySequence<T>& seq)
+        : m_array(makeUnq<DynamicArray<T>>(*seq.m_array)) {}
 
-    ArraySequence(DynamicArray<T>* array) {
-        m_array = std::unique_ptr<DynamicArray<T> >(array);
-    }
+    ArraySequence(DynamicArray<T>* array)
+        : m_array(UnqPtr<DynamicArray<T>>(array)) {} // Здесь также можно использовать makeUnq
 
-    ArraySequence(T* items, int size) {
-        m_array = std::make_unique<DynamicArray<T> >(items, size);
-    }
+    ArraySequence(T* items, int size)
+        : m_array(makeUnq<DynamicArray<T>>(items, size)) {}
 
-    ArraySequence(int size) {
-        m_array = std::make_unique<DynamicArray<T> >(size);
-    }
+    ArraySequence(int size)
+        : m_array(makeUnq<DynamicArray<T>>(size)) {}
 
-    virtual ~ArraySequence() = default; // no need to delete m_array, unique_ptr will handle it
+    virtual ~ArraySequence() = default; // Уничтожение m_array будет происходить автоматически
 
     virtual T getFirst() const override {
         return m_array->get(0);
@@ -65,11 +60,10 @@ public:
     virtual void prepend(const T& item) override {
         m_array->resize(this->getSize() + 1);
         T temp1 = m_array->get(0);
-        T temp2;
         for (int i = 0; i < this->getSize() - 1; i++) {
-            temp2 = temp1;
-            temp1 = m_array->get(i + 1);
-            m_array->set(temp2, i + 1);
+            T temp2 = m_array->get(i + 1);
+            m_array->set(temp1, i + 1);
+            temp1 = temp2;
         }
         m_array->set(item, 0);
     }
@@ -79,11 +73,10 @@ public:
 
         m_array->resize(this->getSize() + 1);
         T temp1 = m_array->get(index);
-        T temp2;
         for (int i = index; i < this->getSize() - 1; i++) {
-            temp2 = temp1;
-            temp1 = m_array->get(i + 1);
-            m_array->set(temp2, i + 1);
+            T temp2 = m_array->get(i + 1);
+            m_array->set(temp1, i + 1);
+            temp1 = temp2;
         }
         m_array->set(item, index);
     }
