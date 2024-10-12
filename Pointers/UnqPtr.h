@@ -1,6 +1,7 @@
 #ifndef MEPHI_LAB_UNQPTR_H
 #define MEPHI_LAB_UNQPTR_H
 
+#include <iostream>
 template<typename T>
 class UnqPtr {
 private:

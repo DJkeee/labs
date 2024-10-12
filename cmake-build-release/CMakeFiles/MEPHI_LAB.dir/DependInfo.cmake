@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dmitry/CLionProjects/labs/SequenceTests/ArraySequenceTest.cpp" "CMakeFiles/MEPHI_LAB.dir/SequenceTests/ArraySequenceTest.cpp.o" "gcc" "CMakeFiles/MEPHI_LAB.dir/SequenceTests/ArraySequenceTest.cpp.o.d"
+  "/home/dmitry/CLionProjects/labs/main.cpp" "CMakeFiles/MEPHI_LAB.dir/main.cpp.o" "gcc" "CMakeFiles/MEPHI_LAB.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

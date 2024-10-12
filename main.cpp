@@ -15,6 +15,4 @@ int main() {
         seq->prepend(i);
     }
     cout << *seq << endl;
-    int* arr = new int[10];
-    cout << arr[100] << endl;
     }

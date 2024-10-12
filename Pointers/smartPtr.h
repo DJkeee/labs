@@ -2,6 +2,7 @@
 #define MEPHI_LAB_SHRDPTR_H
 
 #include <cstdint>
+#include <iostream>
 
 template<typename T>
 class ShrdPtr {

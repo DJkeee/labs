@@ -7,7 +7,6 @@
 #include <cstdint>
 #include "../Pointers/UnqPtr.h"
 
-
 template<typename T>
 class ShrdPtr {
 private:

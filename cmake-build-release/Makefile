@@ -129,29 +129,29 @@ MEPHI_LAB/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/build
 .PHONY : MEPHI_LAB/fast
 
-SequenceTests/ArraySequenceTest.o: SequenceTests/ArraySequenceTest.cpp.o
-.PHONY : SequenceTests/ArraySequenceTest.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-SequenceTests/ArraySequenceTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ArraySequenceTest.cpp.o
-.PHONY : SequenceTests/ArraySequenceTest.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-SequenceTests/ArraySequenceTest.i: SequenceTests/ArraySequenceTest.cpp.i
-.PHONY : SequenceTests/ArraySequenceTest.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-SequenceTests/ArraySequenceTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ArraySequenceTest.cpp.i
-.PHONY : SequenceTests/ArraySequenceTest.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-SequenceTests/ArraySequenceTest.s: SequenceTests/ArraySequenceTest.cpp.s
-.PHONY : SequenceTests/ArraySequenceTest.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-SequenceTests/ArraySequenceTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ArraySequenceTest.cpp.s
-.PHONY : SequenceTests/ArraySequenceTest.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MEPHI_LAB"
-	@echo "... SequenceTests/ArraySequenceTest.o"
-	@echo "... SequenceTests/ArraySequenceTest.i"
-	@echo "... SequenceTests/ArraySequenceTest.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
