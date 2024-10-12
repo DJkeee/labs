@@ -1,39 +1,29 @@
 #ifndef LAB2_3_LISTSEQUENCE_H
 #define LAB2_3_LISTSEQUENCE_H
 
-
-#include "Sequence.h"
+#include "../Pointers/UnqPtr.h"
+#include "../Sequence/Sequence.h"
 #include "List.h"
 
 template<typename T>
 class ListSequence : public Sequence<T> {
 protected:
-    LinkedList<T>* m_list;
+    UnqPtr<LinkedList<T>> m_list;
 
 public:
-    ListSequence() {
-        m_list = new LinkedList<T>();
-    }
+    ListSequence() : m_list(new LinkedList<T>()) {}
 
-    ListSequence(const ListSequence<T> &seq) {
-        m_list = new LinkedList<T>(*seq.m_list);
-    }
+    ListSequence(const ListSequence<T> &seq)
+        : m_list(new LinkedList<T>(*seq.m_list.get())) {}
 
-    explicit ListSequence(LinkedList<T>* list) {
-        m_list = list;
-    }
+    explicit ListSequence(LinkedList<T>* list)
+        : m_list(list) {}
 
-    ListSequence(T* items, int size) {
-        m_list = new LinkedList<T>(items, size);
-    }
+    ListSequence(T* items, int size)
+        : m_list(new LinkedList<T>(items, size)) {}
 
-    explicit ListSequence(int size) {
-        m_list = new LinkedList<T>(size);
-    }
-
-    virtual ~ListSequence() {
-        delete m_list;
-    }
+    explicit ListSequence(int size)
+        : m_list(new LinkedList<T>(size)) {}
 
     T getFirst() const override {
         return m_list->getFirst();
