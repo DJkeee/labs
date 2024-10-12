@@ -9,9 +9,6 @@ private:
     T* ptr;
     uint64_t* m_count;
 
-    template<typename U, typename... Args>
-    friend ShrdPtr<U> makeShrd(Args&&... args);
-
     ShrdPtr(T* ptr, uint64_t* m_count) : ptr(ptr), m_count(m_count) {
     }
 

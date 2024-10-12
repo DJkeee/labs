@@ -14,11 +14,11 @@ public:
         delete ptr;
     }
 
-    UnqPtr(const UnqPtr &other) = delete;
+    UnqPtr(const UnqPtr& other) = delete;
 
-    UnqPtr& operator=(const UnqPtr &other) = delete;
+    UnqPtr& operator=(const UnqPtr& other) = delete;
 
-    UnqPtr &operator=(UnqPtr &&other) {
+    UnqPtr& operator=(UnqPtr&& other) {
         if (this != &other) {
             delete ptr;
             ptr = other.ptr;
