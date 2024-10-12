@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -S C:\Users\Dell\CLionProjects\labs -B C:\Users\Dell\CLionProjects\labs\cmake-build-debug
+-- Configuring done (0.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/Dell/CLionProjects/labs/cmake-build-debug
