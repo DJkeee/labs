@@ -8,29 +8,29 @@
 #include "../Pointers/UnqPtr.h"
 
 template<typename T>
-class ShrdPtr {
+class SmartPtr {
 private:
     UnqPtr<T>* ptr;
     uint64_t* m_count;
 
 public:
-    explicit ShrdPtr(UnqPtr<T>& p)
+    explicit SmartPtr(UnqPtr<T>& p)
         : ptr(&p), m_count(new uint64_t(1)) {
     }
 
-    ShrdPtr(const ShrdPtr& other)
+    SmartPtr(const SmartPtr& other)
         : ptr(other.ptr), m_count(other.m_count) {
         ++(*m_count);
     }
 
-    ~ShrdPtr() {
+    ~SmartPtr() {
         if (--(*m_count) == 0) {
             delete m_count;
             delete ptr;
         }
     }
 
-    ShrdPtr& operator=(const ShrdPtr& other) {
+    SmartPtr& operator=(const SmartPtr& other) {
         if (this != &other) {
             if (--(*m_count) == 0) {
                 delete m_count;
@@ -43,14 +43,14 @@ public:
         return *this;
     }
 
-    ShrdPtr(ShrdPtr&& other) noexcept
+    SmartPtr(SmartPtr&& other) noexcept
         : ptr(other.ptr),
           m_count(other.m_count) {
         other.ptr = nullptr;
         other.m_count = nullptr;
     }
 
-    ShrdPtr& operator=(ShrdPtr&& other) noexcept {
+    SmartPtr& operator=(SmartPtr&& other) noexcept {
         if (this != &other) {
             if (--(*m_count) == 0) {
                 delete m_count;
@@ -82,9 +82,9 @@ public:
 };
 
 template<typename T, typename... Args>
-ShrdPtr<T> makeShrd(Args&&... args) {
+SmartPtr<T> makeShrd(Args&&... args) {
     auto* p = new UnqPtr<T>(new T(std::forward<Args>(args)...));
-    return ShrdPtr<T>(*p);
+    return SmartPtr<T>(*p);
 }
 
 #endif //SHAREDPTR_H

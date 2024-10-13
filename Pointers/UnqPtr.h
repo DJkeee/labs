@@ -2,6 +2,7 @@
 #define MEPHI_LAB_UNQPTR_H
 
 #include <iostream>
+
 template<typename T>
 class UnqPtr {
 private:
@@ -19,7 +20,12 @@ public:
 
     UnqPtr& operator=(const UnqPtr& other) = delete;
 
-    UnqPtr& operator=(UnqPtr&& other) {
+
+    UnqPtr(UnqPtr&& other) noexcept : ptr(other.ptr) {
+        other.ptr = nullptr;
+    }
+
+    UnqPtr& operator=(UnqPtr&& other) noexcept {
         if (this != &other) {
             delete ptr;
             ptr = other.ptr;

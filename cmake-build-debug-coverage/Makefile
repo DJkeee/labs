@@ -129,6 +129,54 @@ MEPHI_LAB/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/build
 .PHONY : MEPHI_LAB/fast
 
+PointersTest/ShrdPtrTest.o: PointersTest/ShrdPtrTest.cpp.o
+.PHONY : PointersTest/ShrdPtrTest.o
+
+# target to build an object file
+PointersTest/ShrdPtrTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/ShrdPtrTest.cpp.o
+.PHONY : PointersTest/ShrdPtrTest.cpp.o
+
+PointersTest/ShrdPtrTest.i: PointersTest/ShrdPtrTest.cpp.i
+.PHONY : PointersTest/ShrdPtrTest.i
+
+# target to preprocess a source file
+PointersTest/ShrdPtrTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/ShrdPtrTest.cpp.i
+.PHONY : PointersTest/ShrdPtrTest.cpp.i
+
+PointersTest/ShrdPtrTest.s: PointersTest/ShrdPtrTest.cpp.s
+.PHONY : PointersTest/ShrdPtrTest.s
+
+# target to generate assembly for a file
+PointersTest/ShrdPtrTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/ShrdPtrTest.cpp.s
+.PHONY : PointersTest/ShrdPtrTest.cpp.s
+
+PointersTest/UnqPtrTest.o: PointersTest/UnqPtrTest.cpp.o
+.PHONY : PointersTest/UnqPtrTest.o
+
+# target to build an object file
+PointersTest/UnqPtrTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/UnqPtrTest.cpp.o
+.PHONY : PointersTest/UnqPtrTest.cpp.o
+
+PointersTest/UnqPtrTest.i: PointersTest/UnqPtrTest.cpp.i
+.PHONY : PointersTest/UnqPtrTest.i
+
+# target to preprocess a source file
+PointersTest/UnqPtrTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/UnqPtrTest.cpp.i
+.PHONY : PointersTest/UnqPtrTest.cpp.i
+
+PointersTest/UnqPtrTest.s: PointersTest/UnqPtrTest.cpp.s
+.PHONY : PointersTest/UnqPtrTest.s
+
+# target to generate assembly for a file
+PointersTest/UnqPtrTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/UnqPtrTest.cpp.s
+.PHONY : PointersTest/UnqPtrTest.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MEPHI_LAB"
+	@echo "... PointersTest/ShrdPtrTest.o"
+	@echo "... PointersTest/ShrdPtrTest.i"
+	@echo "... PointersTest/ShrdPtrTest.s"
+	@echo "... PointersTest/UnqPtrTest.o"
+	@echo "... PointersTest/UnqPtrTest.i"
+	@echo "... PointersTest/UnqPtrTest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

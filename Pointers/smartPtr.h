@@ -5,27 +5,27 @@
 #include <iostream>
 
 template<typename T>
-class ShrdPtr {
+class SmartPtr {
 private:
     T* ptr;
     uint64_t* m_count;
 
-    ShrdPtr(T* ptr, uint64_t* m_count) : ptr(ptr), m_count(m_count) {
+    SmartPtr(T* ptr, uint64_t* m_count) : ptr(ptr), m_count(m_count) {
     }
 
 public:
-    explicit ShrdPtr(T* ptr)
+    explicit SmartPtr(T* ptr)
         : ptr(ptr),
           m_count(new uint64_t(1)) {
     }
 
-    ShrdPtr(const ShrdPtr& other) {
+    SmartPtr(const SmartPtr& other) {
         ptr = other.ptr;
         m_count = other.m_count;
         ++(*m_count);
     }
 
-    ~ShrdPtr() {
+    ~SmartPtr() {
         if (!m_count) {
             return;
         }
@@ -36,7 +36,7 @@ public:
         }
     }
 
-    ShrdPtr& operator=(const ShrdPtr& other) {
+    SmartPtr& operator=(const SmartPtr& other) {
         if (this != &other) {
             if (--(*m_count) == 0) {
                 delete m_count;
@@ -50,14 +50,14 @@ public:
     }
 
 
-    ShrdPtr(ShrdPtr&& other) noexcept {
+    SmartPtr(SmartPtr&& other) noexcept {
         ptr = other.ptr;
         m_count = other.m_count;
         other.ptr = nullptr;
         other.m_count = nullptr;
     }
 
-    ShrdPtr& operator=(ShrdPtr&& other) noexcept {
+    SmartPtr& operator=(SmartPtr&& other) noexcept {
         if (this != &other) {
             if (--(*m_count) == 0) {
                 delete m_count;
@@ -89,9 +89,9 @@ public:
 };
 
 template<typename T, typename... Args>
-ShrdPtr<T> makeShrd(Args&&... args) {
+SmartPtr<T> makeSmart(Args&&... args) {
     auto* p = new T(std::forward<Args>(args)...);
-    return ShrdPtr<T>(p);
+    return SmartPtr<T>(p);
 }
 
 
