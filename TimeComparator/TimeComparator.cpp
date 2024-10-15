@@ -12,18 +12,15 @@
 
 class TimeComparator {
 public:
-    // Метод для вычисления разницы во времени
     template<typename Clock = std::chrono::high_resolution_clock>
     auto timeSpent(const typename Clock::time_point& start, const typename Clock::time_point& end) const -> std::chrono::milliseconds {
         return std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
     }
 
-    // Метод для вывода времени работы
     void out(const std::chrono::milliseconds& elapsed, const std::string& dataStructureName) const {
         std::cout << "Время для " << dataStructureName << ": " << elapsed.count() << " мс\n";
     }
 
-    // Метод для сравнения времени работы std::vector и ArraySequence
     void compareVectorAndArraySeq() {
         // Генератор случайных чисел
         std::random_device rd;
