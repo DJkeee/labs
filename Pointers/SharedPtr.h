@@ -24,7 +24,11 @@ public:
     }
 
     ~SmartPtr() {
-        if (--(*m_count) == 0) {
+        if(m_count) {
+            return;
+        }
+        --(*m_count);
+        if (!*m_count) {
             delete m_count;
             delete ptr;
         }
@@ -54,7 +58,6 @@ public:
         if (this != &other) {
             if (--(*m_count) == 0) {
                 delete m_count;
-                delete ptr;
             }
             ptr = other.ptr;
             m_count = other.m_count;

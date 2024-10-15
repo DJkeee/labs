@@ -1,1 +1,1 @@
-/usr/bin/c++  -fsanitize=address -fsanitize=undefined -O3 -DNDEBUG  -fsanitize=address -fsanitize=undefined CMakeFiles/MEPHI_LAB.dir/main.cpp.o CMakeFiles/MEPHI_LAB.dir/PointersTest/UnqPtrTest.cpp.o CMakeFiles/MEPHI_LAB.dir/PointersTest/ShrdPtrTest.cpp.o -o MEPHI_LAB  -lgtest
+/usr/bin/c++  -fsanitize=address -fsanitize=undefined -O3 -DNDEBUG  -fsanitize=address -fsanitize=undefined CMakeFiles/MEPHI_LAB.dir/PointersTest/SmartPtrTest.cpp.o -o MEPHI_LAB  -lgtest
