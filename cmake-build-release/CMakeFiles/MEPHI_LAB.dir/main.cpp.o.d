@@ -1,5 +1,6 @@
 CMakeFiles/MEPHI_LAB.dir/main.cpp.o: \
  /home/dmitry/CLionProjects/labs/main.cpp /usr/include/stdc-predef.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/TimeComparator.cpp \
  /usr/include/c++/14/iostream /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
@@ -160,160 +161,42 @@ CMakeFiles/MEPHI_LAB.dir/main.cpp.o: \
  /usr/include/c++/14/bits/stl_uninitialized.h \
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
- /usr/include/c++/14/bits/vector.tcc /usr/include/gtest/gtest.h \
+ /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/list \
+ /usr/include/c++/14/bits/stl_list.h \
+ /usr/include/c++/14/bits/allocated_ptr.h \
+ /usr/include/c++/14/ext/aligned_buffer.h \
+ /usr/include/c++/14/bits/list.tcc /usr/include/c++/14/chrono \
+ /usr/include/c++/14/bits/chrono.h /usr/include/c++/14/ratio \
  /usr/include/c++/14/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/14/limits /usr/include/c++/14/memory \
+ /usr/include/c++/14/limits /usr/include/c++/14/ctime \
+ /usr/include/c++/14/bits/parse_numbers.h /usr/include/c++/14/sstream \
+ /usr/include/c++/14/bits/sstream.tcc /usr/include/c++/14/bits/stl_algo.h \
+ /usr/include/c++/14/bits/algorithmfwd.h \
+ /usr/include/c++/14/bits/stl_heap.h \
+ /usr/include/c++/14/bits/uniform_int_dist.h \
  /usr/include/c++/14/bits/stl_tempbuf.h \
- /usr/include/c++/14/bits/stl_raw_storage_iter.h \
- /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/unique_ptr.h \
  /usr/include/c++/14/bits/shared_ptr.h \
  /usr/include/c++/14/bits/shared_ptr_base.h \
- /usr/include/c++/14/bits/allocated_ptr.h \
- /usr/include/c++/14/ext/aligned_buffer.h \
- /usr/include/c++/14/ext/concurrence.h \
- /usr/include/c++/14/bits/shared_ptr_atomic.h \
- /usr/include/c++/14/bits/atomic_base.h \
- /usr/include/c++/14/bits/atomic_lockfree_defines.h \
- /usr/include/c++/14/bits/atomic_wait.h /usr/include/c++/14/climits \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/syscall.h \
- /usr/include/x86_64-linux-gnu/sys/syscall.h \
- /usr/lib/linux/uapi/x86/asm/unistd.h \
- /usr/lib/linux/uapi/x86/asm/unistd_64.h \
- /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /usr/include/c++/14/bits/std_mutex.h \
- /usr/include/c++/14/backward/auto_ptr.h \
- /usr/include/c++/14/bits/ranges_uninitialized.h \
- /usr/include/c++/14/bits/ranges_algobase.h \
- /usr/include/c++/14/pstl/glue_memory_defs.h \
- /usr/include/c++/14/pstl/execution_defs.h /usr/include/c++/14/set \
- /usr/include/c++/14/bits/stl_tree.h \
- /usr/include/c++/14/bits/node_handle.h \
- /usr/include/c++/14/bits/stl_set.h \
- /usr/include/c++/14/bits/stl_multiset.h \
- /usr/include/c++/14/bits/erase_if.h /usr/include/c++/14/sstream \
- /usr/include/c++/14/bits/sstream.tcc \
- /usr/include/gtest/gtest-assertion-result.h \
- /usr/include/gtest/gtest-message.h \
- /usr/include/gtest/internal/gtest-port.h /usr/include/c++/14/version \
- /usr/include/c++/14/stdlib.h /usr/include/string.h \
- /usr/include/strings.h /usr/include/c++/14/locale \
- /usr/include/c++/14/bits/locale_facets_nonio.h /usr/include/c++/14/ctime \
+ /usr/include/c++/14/bits/unique_ptr.h \
+ /usr/include/c++/14/ext/concurrence.h /usr/include/c++/14/bits/align.h \
+ /usr/include/c++/14/bits/chrono_io.h /usr/include/c++/14/iomanip \
+ /usr/include/c++/14/locale \
+ /usr/include/c++/14/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/14/bits/codecvt.h \
  /usr/include/c++/14/bits/locale_facets_nonio.tcc \
  /usr/include/c++/14/bits/locale_conv.h \
- /usr/include/x86_64-linux-gnu/sys/stat.h \
- /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
- /usr/include/linux/types.h /usr/lib/linux/uapi/x86/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/lib/linux/uapi/x86/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h /usr/lib/linux/uapi/x86/asm/posix_types.h \
- /usr/lib/linux/uapi/x86/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /usr/include/gtest/internal/custom/gtest-port.h \
- /usr/include/gtest/internal/gtest-port-arch.h /usr/include/regex.h \
- /usr/include/c++/14/condition_variable /usr/include/c++/14/bits/chrono.h \
- /usr/include/c++/14/ratio /usr/include/c++/14/bits/parse_numbers.h \
- /usr/include/c++/14/bits/unique_lock.h /usr/include/c++/14/stop_token \
- /usr/include/c++/14/atomic /usr/include/c++/14/bits/std_thread.h \
- /usr/include/c++/14/semaphore /usr/include/c++/14/bits/semaphore_base.h \
- /usr/include/c++/14/bits/atomic_timed_wait.h \
- /usr/include/c++/14/bits/this_thread_sleep.h \
- /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h /usr/include/c++/14/mutex \
- /usr/include/c++/14/any /usr/include/c++/14/optional \
- /usr/include/c++/14/bits/enable_special_members.h \
- /usr/include/c++/14/variant /usr/include/gtest/gtest-death-test.h \
- /usr/include/gtest/internal/gtest-death-test-internal.h \
- /usr/include/gtest/gtest-matchers.h /usr/include/c++/14/functional \
- /usr/include/c++/14/bits/std_function.h \
- /usr/include/c++/14/unordered_map \
- /usr/include/c++/14/bits/unordered_map.h \
- /usr/include/c++/14/bits/hashtable.h \
- /usr/include/c++/14/bits/hashtable_policy.h /usr/include/c++/14/array \
- /usr/include/gtest/gtest-printers.h /usr/include/c++/14/utility \
- /usr/include/c++/14/bits/stl_relops.h \
- /usr/include/gtest/internal/gtest-internal.h \
- /usr/include/x86_64-linux-gnu/sys/wait.h /usr/include/signal.h \
- /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
- /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
- /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
- /usr/include/x86_64-linux-gnu/bits/sigaction.h \
- /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
- /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
- /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /usr/include/x86_64-linux-gnu/bits/types/idtype_t.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/float.h /usr/include/c++/14/map \
- /usr/include/c++/14/bits/stl_map.h \
- /usr/include/c++/14/bits/stl_multimap.h \
- /usr/include/gtest/internal/gtest-filepath.h \
- /usr/include/gtest/internal/gtest-string.h \
- /usr/include/gtest/internal/gtest-type-util.h \
- /usr/include/c++/14/cxxabi.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/cxxabi_tweaks.h \
- /usr/include/c++/14/span \
- /usr/include/gtest/internal/custom/gtest-printers.h \
- /usr/include/gtest/gtest-param-test.h /usr/include/c++/14/iterator \
- /usr/include/c++/14/bits/stream_iterator.h \
- /usr/include/gtest/internal/gtest-param-util.h \
- /usr/include/c++/14/cassert /usr/include/assert.h \
- /usr/include/gtest/gtest-test-part.h \
- /usr/include/gtest/gtest-typed-test.h \
- /usr/include/gtest/gtest_pred_impl.h /usr/include/gtest/gtest_prod.h \
- /home/dmitry/CLionProjects/labs/Sequence/ArraySequence.h \
- /home/dmitry/CLionProjects/labs/Sequence/Sequence.h \
- /home/dmitry/CLionProjects/labs/Sequence/DinamicArray.h \
- /home/dmitry/CLionProjects/labs/Sequence/Errors.h \
- /home/dmitry/CLionProjects/labs/Sequence/../Pointers/UnqPtr.h \
- /home/dmitry/CLionProjects/labs/Pointers/UnqPtr.h \
- /home/dmitry/CLionProjects/labs/Sequence/ListSequence.h \
- /home/dmitry/CLionProjects/labs/Sequence/../Sequence/Sequence.h \
- /home/dmitry/CLionProjects/labs/Sequence/List.h \
- /usr/include/c++/14/chrono /usr/include/c++/14/bits/stl_algo.h \
- /usr/include/c++/14/bits/algorithmfwd.h \
- /usr/include/c++/14/bits/stl_heap.h \
- /usr/include/c++/14/bits/uniform_int_dist.h \
- /usr/include/c++/14/bits/chrono_io.h /usr/include/c++/14/iomanip \
  /usr/include/c++/14/bits/quoted_string.h /usr/include/c++/14/format \
- /usr/include/c++/14/charconv /usr/include/c++/14/bits/unicode.h \
+ /usr/include/c++/14/array /usr/include/c++/14/charconv \
+ /usr/include/c++/14/optional \
+ /usr/include/c++/14/bits/enable_special_members.h \
+ /usr/include/c++/14/span /usr/include/c++/14/variant \
+ /usr/include/c++/14/bits/ranges_algobase.h \
+ /usr/include/c++/14/bits/unicode.h \
  /usr/include/c++/14/bits/unicode-data.h /usr/include/c++/14/random \
  /usr/include/c++/14/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -341,4 +224,13 @@ CMakeFiles/MEPHI_LAB.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/14/bits/opt_random.h \
  /usr/include/c++/14/bits/random.tcc /usr/include/c++/14/numeric \
  /usr/include/c++/14/bits/stl_numeric.h \
- /usr/include/c++/14/pstl/glue_numeric_defs.h
+ /usr/include/c++/14/pstl/glue_numeric_defs.h \
+ /usr/include/c++/14/pstl/execution_defs.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/ArraySequence.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/Sequence.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/DinamicArray.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/Errors.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/../Pointers/UnqPtr.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/ListSequence.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/../Sequence/Sequence.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/List.h

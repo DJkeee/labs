@@ -10,54 +10,37 @@ private:
     struct Node {
         T item;
         Node* next = nullptr;
+        Node* prev = nullptr;
     };
 
     Node* m_head = nullptr;
+    Node* m_tail = nullptr;
     int m_size = 0;
 
 public:
-    LinkedList() : m_size(0) {
-    }
+    LinkedList() = default;
 
     explicit LinkedList(int size) : LinkedList() {
         if (size < 0) throw std::length_error(NEGATIVE_SIZE_MESSAGE);
-
-
-        Node** tmp = &(m_head);
         for (int i = 0; i < size; i++) {
-            *tmp = new Node;
-            (*tmp)->item = T();
-            tmp = &((*tmp)->next);
+            append(T());
         }
-        m_size = size;
     }
 
     LinkedList(T* items, int size) : LinkedList() {
         if (size < 0) throw std::length_error(NEGATIVE_SIZE_MESSAGE);
-
-        Node** ptr = &(m_head);
         for (int i = 0; i < size; i++) {
-            *ptr = new Node;
-            (*ptr)->item = items[i];
-            ptr = &((*ptr)->next);
+            append(items[i]);
         }
-        m_size = size;
     }
 
-    LinkedList(const LinkedList<T>& list) {
-        Node* ptr = list.m_head;
-        Node** newPtr = &(m_head);
-
-        for (int i = 0; i < list.m_size; i++, ptr = ptr->next) {
-            *newPtr = new Node;
-            (*newPtr)->item = ptr->item;
-            newPtr = &((*newPtr)->next);
+    LinkedList(const LinkedList<T>& list) : LinkedList() {
+        for (int i = 0; i < list.m_size; i++) {
+            append(list.get(i));
         }
-
-        m_size = list.m_size;
     }
 
-    virtual ~LinkedList() {
+    ~LinkedList() {
         Node* ptr = m_head;
         Node* next;
         while (ptr != nullptr) {
@@ -65,106 +48,107 @@ public:
             delete ptr;
             ptr = next;
         }
-        m_size = 0;
     }
 
     T getFirst() const {
         if (m_size == 0) throw std::length_error(ZERO_SIZE_MESSAGE);
-
         return m_head->item;
     }
 
     T getLast() const {
         if (m_size == 0) throw std::length_error(ZERO_SIZE_MESSAGE);
-
-        Node* ptr = m_head;
-        while (ptr->next != nullptr) ptr = ptr->next;
-        return ptr->item;
+        return m_tail->item;
     }
 
     T get(int index) const {
         if ((index < 0) || (index >= m_size)) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
-
-        Node* ptr; {
-            int i = 0;
-            for (i = 0, ptr = m_head; i < index; i++, ptr = ptr->next);
-        }
-
+        Node* ptr = m_head;
+        for (int i = 0; i < index; i++) ptr = ptr->next;
         return ptr->item;
     }
 
     void set(const T& item, int index) {
         if (index < 0 || index >= m_size) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
-
-
-        Node* ptr; {
-            int i = 0;
-            for (i = 0, ptr = m_head; i < index; i++, ptr = ptr->next);
-        }
-
+        Node* ptr = m_head;
+        for (int i = 0; i < index; i++) ptr = ptr->next;
         ptr->item = item;
     }
 
-    [[nodiscard]] int getSize() const { return m_size; }
+    int getSize() const { return m_size; }
 
     void append(const T& item) {
-        Node** ptr = &(m_head);
-        while (*ptr != nullptr) ptr = &((*ptr)->next);
-
-        (*ptr) = new Node;
-        (*ptr)->item = item;
-
+        Node* newNode = new Node{item, nullptr, m_tail};
+        if (m_tail != nullptr) {
+            m_tail->next = newNode;
+        } else {
+            m_head = newNode;
+        }
+        m_tail = newNode;
         m_size++;
     }
 
     void prepend(const T& item) {
-        Node* ptr = new Node{item, m_head};
-        m_head = ptr;
+        Node* newNode = new Node{item, m_head, nullptr};
+        if (m_head != nullptr) {
+            m_head->prev = newNode;
+        } else {
+            m_tail = newNode;
+        }
+        m_head = newNode;
         m_size++;
     }
-
 
     void removeAt(int index) {
         if (index < 0 || index >= m_size) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
-        Node preHead = {m_head->item, m_head};
-        Node* ptr; {
-            int i = 0;
-            for (i = 0, ptr = &preHead; i < index; i++, ptr = ptr->next);
+        Node* ptr = m_head;
+        if (index == 0) {
+            m_head = ptr->next;
+            if (m_head != nullptr) {
+                m_head->prev = nullptr;
+            } else {
+                m_tail = nullptr;
+            }
+        } else {
+            for (int i = 0; i < index - 1; i++) ptr = ptr->next;
+            Node* next = ptr->next;
+            ptr->next = next->next;
+            if (next->next != nullptr) {
+                next->next->prev = ptr;
+            } else {
+                m_tail = ptr;
+            }
+            delete next;
         }
-        Node* tmp = ptr->next;
-        ptr->next = ptr->next->next;
-        delete tmp;
-
-        m_head = preHead.next;
         m_size--;
     }
 
-
     void insertAt(const T& item, int index) {
         if (index < 0 || index > m_size) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
-
-
-        Node preHead = {m_head->item, m_head};
-        Node* ptr; {
-            int i = 0;
-            for (i = 0, ptr = &preHead; i < index; i++, ptr = ptr->next);
+        if (index == 0) {
+            prepend(item);
+        } else if (index == m_size) {
+            append(item);
+        } else {
+            Node* ptr = m_head;
+            for (int i = 0; i < index - 1; i++) ptr = ptr->next;
+            Node* newNode = new Node{item, ptr->next, ptr};
+            ptr->next->prev = newNode;
+            ptr->next = newNode;
+            m_size++;
         }
-
-        ptr->next = new Node{item, ptr->next};
-        m_head = preHead.next;
-        m_size++;
     }
 
     bool operator==(const LinkedList<T>& list) const {
-        if (this->m_size != list.m_size) return false;
-
+        if (m_size != list.m_size) return false;
+        Node* ptr1 = m_head;
+        Node* ptr2 = list.m_head;
         for (int i = 0; i < m_size; i++) {
-            if (this->get(i) != list.get(i)) return false;
+            if (ptr1->data != ptr2->data) return false;
+            ptr1 = ptr1->next;
+            ptr2 = ptr2->next;
         }
-
         return true;
     }
 };
-
 
 #endif //LAB2_3_LIST_H

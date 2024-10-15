@@ -129,6 +129,30 @@ MEPHI_LAB/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/build
 .PHONY : MEPHI_LAB/fast
 
+TimeComparator/TimeComparator.o: TimeComparator/TimeComparator.cpp.o
+.PHONY : TimeComparator/TimeComparator.o
+
+# target to build an object file
+TimeComparator/TimeComparator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o
+.PHONY : TimeComparator/TimeComparator.cpp.o
+
+TimeComparator/TimeComparator.i: TimeComparator/TimeComparator.cpp.i
+.PHONY : TimeComparator/TimeComparator.i
+
+# target to preprocess a source file
+TimeComparator/TimeComparator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.i
+.PHONY : TimeComparator/TimeComparator.cpp.i
+
+TimeComparator/TimeComparator.s: TimeComparator/TimeComparator.cpp.s
+.PHONY : TimeComparator/TimeComparator.s
+
+# target to generate assembly for a file
+TimeComparator/TimeComparator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.s
+.PHONY : TimeComparator/TimeComparator.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MEPHI_LAB"
+	@echo "... TimeComparator/TimeComparator.o"
+	@echo "... TimeComparator/TimeComparator.i"
+	@echo "... TimeComparator/TimeComparator.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
