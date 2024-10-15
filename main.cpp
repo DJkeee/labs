@@ -10,7 +10,6 @@
 #include <chrono>
 #include <random>
 
-// Ваша реализация ArraySequence (предполагается, что она уже есть)
 
 class TimeTest {
 public:
@@ -23,7 +22,7 @@ public:
 
         auto start = std::chrono::high_resolution_clock::now();
         std::vector<int> vec;
-        for (int i = 0; i < 100000; ++i) {
+        for (int i = 0; i < 1000000; ++i) {
             vec.push_back(distrib(gen));
         }
         auto end = std::chrono::high_resolution_clock::now();
@@ -32,7 +31,7 @@ public:
 
         start = std::chrono::high_resolution_clock::now();
         ArraySequence<int> arraySeq;
-        for (int i = 0; i < 100000; ++i) {
+        for (int i = 0; i < 1000000; ++i) {
             arraySeq.append(distrib(gen));
         }
         end = std::chrono::high_resolution_clock::now();
