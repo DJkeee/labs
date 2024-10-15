@@ -20,7 +20,7 @@ public:
         std::mt19937 gen(rd());
         std::uniform_int_distribution<> distrib(0, 100);
 
-        // Измерение времени для std::vector
+
         auto start = std::chrono::high_resolution_clock::now();
         std::vector<int> vec;
         for (int i = 0; i < 100000; ++i) {
@@ -29,7 +29,7 @@ public:
         auto end = std::chrono::high_resolution_clock::now();
         auto elapsed_vector = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 
-        // Измерение времени для ArraySequence
+
         start = std::chrono::high_resolution_clock::now();
         ArraySequence<int> arraySeq;
         for (int i = 0; i < 100000; ++i) {
@@ -38,7 +38,7 @@ public:
         end = std::chrono::high_resolution_clock::now();
         auto elapsed_arraySeq = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 
-        // Вывод результатов
+
         std::cout << "Время для std::vector: " << elapsed_vector.count() << " мс\n";
         std::cout << "Время для ArraySequence: " << elapsed_arraySeq.count() << " мс\n";
     }
