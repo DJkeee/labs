@@ -4,6 +4,9 @@
 #include <stdexcept>
 #include "Errors.h"
 
+#include <iostream>
+#include <stdexcept>
+
 template<typename T>
 class DynamicArray {
 private:
@@ -11,17 +14,34 @@ private:
     int m_size = 0;
     int m_capacity = 0;
 
+    void copyOfMemory(int newCapacity) {
+        if (newCapacity <= m_capacity) {
+            return; // Если новая емкость меньше или равна текущей, ничего не делаем
+        }
+
+        T* newData = new T[newCapacity];
+
+        // Копируем старые данные в новый массив
+        for (int i = 0; i < m_size; ++i) {
+            newData[i] = m_data[i];
+        }
+
+        delete[] m_data; // Освобождаем старую память
+        m_data = newData;
+        m_capacity = newCapacity;
+    }
+
 public:
     DynamicArray() : m_size(0), m_capacity(0) {
     }
 
     DynamicArray(int size) : m_size(size), m_capacity(size) {
-        if (size <= 0) throw std::length_error(NEGATIVE_SIZE_MESSAGE);
+        if (size <= 0) throw std::length_error("Negative size is not allowed.");
         m_data = new T[size];
     }
 
     DynamicArray(T* data, int size) : m_size(size), m_capacity(size) {
-        if (size <= 0) throw std::length_error(NEGATIVE_SIZE_MESSAGE);
+        if (size <= 0) throw std::length_error("Negative size is not allowed.");
 
         m_data = new T[size];
         for (int i = 0; i < size; i++) {
@@ -29,31 +49,31 @@ public:
         }
     }
 
-    DynamicArray(const DynamicArray<T> &array, int size) : m_size(size), m_capacity(size) {
-        if (size <= 0) throw std::length_error(NEGATIVE_SIZE_MESSAGE);
-
-        if (size > array.m_size) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
-        m_data = new T[size];
-        for (int i = 0; i < size; i++) {
+    DynamicArray(const DynamicArray<T>& array) : m_size(array.m_size), m_capacity(array.m_capacity) {
+        m_data = new T[m_capacity];
+        for (int i = 0; i < m_size; ++i) {
             m_data[i] = array.m_data[i];
         }
     }
 
-    DynamicArray(const DynamicArray<T> &array) : m_size(array.m_size), m_capacity(array.m_capacity) {
-        m_data = new T[m_capacity];
-        for (int i = 0; i < m_size; i++) {
+    DynamicArray(const DynamicArray<T>& array, int size) : m_size(size), m_capacity(size) {
+        if (size <= 0) throw std::length_error("Negative size is not allowed.");
+
+        if (size > array.m_size) throw std::out_of_range("Index out of range.");
+        m_data = new T[size];
+        for (int i = 0; i < size; ++i) {
             m_data[i] = array.m_data[i];
         }
     }
 
     virtual ~DynamicArray() {
         delete[] m_data;
-        m_size = 0;
-        m_capacity = 0;
     }
 
     T get(int index) const {
-        if (index < 0 || index >= m_size) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
+        if (index < 0 || index >= m_size) {
+            throw std::out_of_range("Index out of range.");
+        }
         return m_data[index];
     }
 
@@ -61,31 +81,33 @@ public:
         return m_size;
     }
 
-    void set(const T &value, int index) {
+    void set(const T& value, int index) {
         if (index < 0 || index >= m_size) {
-            throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
+            throw std::out_of_range("Index out of range.");
         }
         m_data[index] = value;
     }
 
-    void resize(int size) {
-        if (size <= 0) {
-            throw std::length_error(NEGATIVE_SIZE_MESSAGE);
-        }
-        T* newData = new T[size];
-
-        for (int i = 0; i < (m_size > size ? size : m_size); i++) {
-            newData[i] = m_data[i];
+    // Измененная функция resize:
+    void resize(int newSize) {
+        if (newSize <= 0) {
+            throw std::length_error("Negative size is not allowed.");
         }
 
-        delete[] m_data;
-        m_data = newData;
+        if (newSize > m_capacity) {
+            copyOfMemory(newSize * 2); // Увеличиваем емкость в два раза, если нужно
+        }
 
-        m_size = size;
-        m_capacity = size;
+        m_size = newSize; // Обновляем размер
     }
 
-    bool operator==(const DynamicArray<T> &arr) const {
+    // Добавлена функция append для удобства добавления элементов:
+    void append(const T& value) {
+        copyOfMemory(m_size + 1);
+        m_data[m_size - 1] = value;
+    }
+
+    bool operator==(const DynamicArray<T>& arr) const {
         if (m_size != arr.m_size) {
             return false;
         }
@@ -97,7 +119,7 @@ public:
         return true;
     }
 
-    DynamicArray<T>& operator=(const DynamicArray<T> &array) {
+    DynamicArray<T>& operator=(const DynamicArray<T>& array) {
         if (this != &array) {
             delete[] m_data;
             m_size = array.m_size;
@@ -110,5 +132,6 @@ public:
         return *this;
     }
 };
+
 
 #endif //LAB2_3_DINAMICARRAY_H
