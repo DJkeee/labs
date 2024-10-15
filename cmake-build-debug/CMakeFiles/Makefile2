@@ -81,12 +81,12 @@ clean: CMakeFiles/MEPHI_LAB.dir/clean
 CMakeFiles/MEPHI_LAB.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target MEPHI_LAB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target MEPHI_LAB"
 .PHONY : CMakeFiles/MEPHI_LAB.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MEPHI_LAB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmitry/CLionProjects/labs/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmitry/CLionProjects/labs/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MEPHI_LAB.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmitry/CLionProjects/labs/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/MEPHI_LAB.dir/rule

@@ -1,4 +1,3 @@
-
 #include <gtest/gtest.h>
 #include "../Sequence/ListSequence.h" // Предполагается, что ваш класс ListSequence находится в этом заголовочном файле
 
@@ -8,7 +7,7 @@ protected:
 
     void SetUp() override {
         int* arr = new int[5]{1, 2, 3, 4, 5};
-        seq =new ListSequence<int>(arr, 5);
+        seq = new ListSequence<int>(arr, 5);
     }
 };
 
@@ -57,7 +56,7 @@ TEST_F(ListSequenceTest, StreamOutput) {
     EXPECT_EQ(os.str(), "1 2 3 4 5 ");
 }
 
-int main(int argc, char **argv) {
+int main(int argc, char** argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }

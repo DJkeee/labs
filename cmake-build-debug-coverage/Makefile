@@ -129,29 +129,53 @@ MEPHI_LAB/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/build
 .PHONY : MEPHI_LAB/fast
 
-PointersTest/SmartPtrTest.o: PointersTest/SmartPtrTest.cpp.o
-.PHONY : PointersTest/SmartPtrTest.o
+SequenceTests/ListSequenceTest.o: SequenceTests/ListSequenceTest.cpp.o
+.PHONY : SequenceTests/ListSequenceTest.o
 
 # target to build an object file
-PointersTest/SmartPtrTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/SmartPtrTest.cpp.o
-.PHONY : PointersTest/SmartPtrTest.cpp.o
+SequenceTests/ListSequenceTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o
+.PHONY : SequenceTests/ListSequenceTest.cpp.o
 
-PointersTest/SmartPtrTest.i: PointersTest/SmartPtrTest.cpp.i
-.PHONY : PointersTest/SmartPtrTest.i
+SequenceTests/ListSequenceTest.i: SequenceTests/ListSequenceTest.cpp.i
+.PHONY : SequenceTests/ListSequenceTest.i
 
 # target to preprocess a source file
-PointersTest/SmartPtrTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/SmartPtrTest.cpp.i
-.PHONY : PointersTest/SmartPtrTest.cpp.i
+SequenceTests/ListSequenceTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.i
+.PHONY : SequenceTests/ListSequenceTest.cpp.i
 
-PointersTest/SmartPtrTest.s: PointersTest/SmartPtrTest.cpp.s
-.PHONY : PointersTest/SmartPtrTest.s
+SequenceTests/ListSequenceTest.s: SequenceTests/ListSequenceTest.cpp.s
+.PHONY : SequenceTests/ListSequenceTest.s
 
 # target to generate assembly for a file
-PointersTest/SmartPtrTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/SmartPtrTest.cpp.s
-.PHONY : PointersTest/SmartPtrTest.cpp.s
+SequenceTests/ListSequenceTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.s
+.PHONY : SequenceTests/ListSequenceTest.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MEPHI_LAB"
-	@echo "... PointersTest/SmartPtrTest.o"
-	@echo "... PointersTest/SmartPtrTest.i"
-	@echo "... PointersTest/SmartPtrTest.s"
+	@echo "... SequenceTests/ListSequenceTest.o"
+	@echo "... SequenceTests/ListSequenceTest.i"
+	@echo "... SequenceTests/ListSequenceTest.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

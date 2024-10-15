@@ -8,11 +8,4 @@
 using namespace std;
 
 int main() {
-    ListSequence<int> vec;
-    UnqPtr<ListSequence<int>> seq = makeUnq<ListSequence<int>>(vec);
-    for (int i = 0; i < 10; i++) {
-        seq->append(i);
-        seq->prepend(i);
-    }
-    cout << *seq << endl;
-    }
+}
