@@ -5,7 +5,7 @@
 #include <stdexcept>
 
 template<typename T>
-class LinkedList {
+class RawList {
 private:
     struct Node {
         T item;
@@ -18,29 +18,29 @@ private:
     int m_size = 0;
 
 public:
-    LinkedList() = default;
+    RawList() = default;
 
-    explicit LinkedList(int size) : LinkedList() {
+    explicit RawList(int size) : RawList() {
         if (size < 0) throw std::length_error(NEGATIVE_SIZE_MESSAGE);
         for (int i = 0; i < size; i++) {
             append(T());
         }
     }
 
-    LinkedList(T* items, int size) : LinkedList() {
+    RawList(T* items, int size) : RawList() {
         if (size < 0) throw std::length_error(NEGATIVE_SIZE_MESSAGE);
         for (int i = 0; i < size; i++) {
             append(items[i]);
         }
     }
 
-    LinkedList(const LinkedList<T>& list) : LinkedList() {
+    RawList(const RawList<T>& list) : RawList() {
         for (int i = 0; i < list.m_size; i++) {
             append(list.get(i));
         }
     }
 
-    ~LinkedList() {
+    ~RawList() {
         Node* ptr = m_head;
         Node* next;
         while (ptr != nullptr) {
@@ -138,7 +138,7 @@ public:
         }
     }
 
-    bool operator==(const LinkedList<T>& list) const {
+    bool operator==(const RawList<T>& list) const {
         if (m_size != list.m_size) return false;
         Node* ptr1 = m_head;
         Node* ptr2 = list.m_head;

@@ -6,58 +6,70 @@
 #define LAB2_3_ARRAYSEQUENCE_H
 
 #include "Sequence.h"
-#include "DinamicArray.h"
+#include "SmartDinArray.h"
 #include "../Pointers/UnqPtr.h"
 
 template<typename T>
 class ArraySequence : public Sequence<T> {
 protected:
-    UnqPtr<DynamicArray<T>> m_array;
+    SmartDynamicArray<T>* m_array;
 
 public:
-    ArraySequence() : m_array(makeUnq<DynamicArray<T>>()) {}
+    ArraySequence() : m_array(new SmartDynamicArray<T>()) {
+    }
 
     ArraySequence(const ArraySequence<T>& seq)
-        : m_array(makeUnq<DynamicArray<T>>(*seq.m_array)) {}
+        : m_array(new SmartDynamicArray<T>(*seq.m_array)) {
+    }
 
-    ArraySequence(DynamicArray<T>* array)
-        : m_array(UnqPtr<DynamicArray<T>>(array)) {} // Здесь также можно использовать makeUnq
+    ArraySequence(SmartDynamicArray<T>* array)
+        : m_array(array) {
+    }
 
     ArraySequence(T* items, int size)
-        : m_array(makeUnq<DynamicArray<T>>(items, size)) {}
+        : m_array(new SmartDynamicArray<T>(items, size)) {
+    }
 
     ArraySequence(int size)
-        : m_array(makeUnq<DynamicArray<T>>(size)) {}
+        : m_array(new SmartDynamicArray<T>(size)) {
+    }
 
-    virtual ~ArraySequence() = default; // Уничтожение m_array будет происходить автоматически
+    virtual ~ArraySequence() {
+        delete m_array;
+    }
 
-    virtual T getFirst() const override {
+    T getFirst() const override {
         return m_array->get(0);
     }
 
-    virtual T getLast() const override {
+
+    T getLast() const override {
         return m_array->get(this->getSize() - 1);
     }
 
-    virtual T get(int index) const override {
+
+    T get(int index) const override {
         return m_array->get(index);
     }
 
-    virtual int getSize() const override {
+
+    int getSize() const override {
         return m_array->getSize();
     }
 
-    virtual void set(const T& item, int index) override {
-        if (index < 0 || index >= this->getSize()) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
+
+    void set(const T& item, int index) override {
+        if (index < 0 || index >= this->getSize()) throw std::out_of_range("Index out of range.");
         m_array->set(item, index);
     }
+
 
     void append(const T& item) override {
         m_array->resize(this->getSize() + 1);
         m_array->set(item, this->getSize() - 1);
     }
 
-    virtual void prepend(const T& item) override {
+    void prepend(const T& item) override {
         m_array->resize(this->getSize() + 1);
         T temp1 = m_array->get(0);
         for (int i = 0; i < this->getSize() - 1; i++) {
@@ -68,8 +80,9 @@ public:
         m_array->set(item, 0);
     }
 
-    virtual void insertAt(const T& item, int index) override {
-        if (index < 0 || index > this->getSize()) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
+
+    void insertAt(const T& item, int index) override {
+        if (index < 0 || index > this->getSize()) throw std::out_of_range("Index out of range.");
 
         m_array->resize(this->getSize() + 1);
         T temp1 = m_array->get(index);
@@ -81,12 +94,11 @@ public:
         m_array->set(item, index);
     }
 
+
     friend std::ostream& operator<<(std::ostream& os, const ArraySequence<T>& seq) {
         for (int i = 0; i < seq.getSize(); i++)
             os << seq.get(i) << " ";
         return os;
     }
 };
-
-
 #endif //LAB2_3_ARRAYSEQUENCE_H

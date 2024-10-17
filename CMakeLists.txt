@@ -7,8 +7,12 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address -fsanitize=undefined"
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -fsanitize=address -fsanitize=undefined")
 
 add_executable(MEPHI_LAB
-        main.cpp
-        TimeComparator/TimeComparator.cpp
+       # TimeComparator/TimeComparator.cpp
+        SequenceTests/ListSequenceTest.cpp
+        Sequence/SmartList.h
+        Sequence/List.h
+        Sequence/ListSequence.h
+        #  Sequence/SmartDinArray.h
 )
 
 target_link_libraries(MEPHI_LAB gtest)

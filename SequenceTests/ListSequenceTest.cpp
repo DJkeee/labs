@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../Sequence/ListSequence.h" // Предполагается, что ваш класс ListSequence находится в этом заголовочном файле
+#include "../Sequence/ListSequence.h"
 
 class ListSequenceTest : public ::testing::Test {
 protected:

@@ -301,6 +301,5 @@ CMakeFiles/MEPHI_LAB.dir/SequenceTests/ArraySequenceTest.cpp.o: \
  /usr/include/gtest/gtest_pred_impl.h /usr/include/gtest/gtest_prod.h \
  /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/ArraySequence.h \
  /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/Sequence.h \
- /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/DinamicArray.h \
- /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/Errors.h \
+ /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/SmartDinArray.h \
  /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/../Pointers/UnqPtr.h

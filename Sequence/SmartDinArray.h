@@ -1,16 +1,11 @@
-#ifndef LAB2_3_DINAMICARRAY_H
-#define LAB2_3_DINAMICARRAY_H
+#ifndef SMARTDINARRAY_H
+#define SMARTDINARRAY_H
+#include "../Pointers/UnqPtr.h"
 
-#include <stdexcept>
-#include "Errors.h"
-
-#include <iostream>
-#include <stdexcept>
-
-template<typename T>
-class DynamicArray {
+   template<typename T>
+class SmartDynamicArray {
 private:
-    T* m_data = nullptr;
+    T* m_data;
     int m_size = 0;
     int m_capacity = 0;
 
@@ -31,41 +26,29 @@ private:
     }
 
 public:
-    DynamicArray() : m_size(0), m_capacity(0) {
-    }
+    SmartDynamicArray() : m_data(nullptr), m_size(0), m_capacity(0) {}
 
-    DynamicArray(int size) : m_size(size), m_capacity(size) {
+    SmartDynamicArray(int size) : m_size(size), m_capacity(size) {
         if (size <= 0) throw std::length_error("Negative size is not allowed.");
         m_data = new T[size];
     }
 
-    DynamicArray(T* data, int size) : m_size(size), m_capacity(size) {
+    SmartDynamicArray(T* data, int size) : m_size(size), m_capacity(size) {
         if (size <= 0) throw std::length_error("Negative size is not allowed.");
-
         m_data = new T[size];
         for (int i = 0; i < size; i++) {
             m_data[i] = data[i];
         }
     }
 
-    DynamicArray(const DynamicArray<T>& array) : m_size(array.m_size), m_capacity(array.m_capacity) {
+    SmartDynamicArray(const SmartDynamicArray<T>& array) : m_size(array.m_size), m_capacity(array.m_capacity) {
         m_data = new T[m_capacity];
         for (int i = 0; i < m_size; ++i) {
             m_data[i] = array.m_data[i];
         }
     }
 
-    DynamicArray(const DynamicArray<T>& array, int size) : m_size(size), m_capacity(size) {
-        if (size <= 0) throw std::length_error("Negative size is not allowed.");
-
-        if (size > array.m_size) throw std::out_of_range("Index out of range.");
-        m_data = new T[size];
-        for (int i = 0; i < size; ++i) {
-            m_data[i] = array.m_data[i];
-        }
-    }
-
-    virtual ~DynamicArray() {
+    virtual ~SmartDynamicArray() {
         delete[] m_data;
     }
 
@@ -102,9 +85,10 @@ public:
     void append(const T& value) {
         copyOfMemory(m_size + 1);
         m_data[m_size - 1] = value;
+        m_size++; // Increase size
     }
 
-    bool operator==(const DynamicArray<T>& arr) const {
+    bool operator==(const SmartDynamicArray<T>& arr) const {
         if (m_size != arr.m_size) {
             return false;
         }
@@ -116,7 +100,7 @@ public:
         return true;
     }
 
-    DynamicArray<T>& operator=(const DynamicArray<T>& array) {
+    SmartDynamicArray<T>& operator=(const SmartDynamicArray<T>& array) {
         if (this != &array) {
             delete[] m_data;
             m_size = array.m_size;
@@ -131,4 +115,4 @@ public:
 };
 
 
-#endif //LAB2_3_DINAMICARRAY_H
+#endif //SMARTDINARRAY_H

@@ -3,27 +3,37 @@
 
 #include "../Pointers/UnqPtr.h"
 #include "../Sequence/Sequence.h"
-#include "List.h"
+#include "SmartList.h"
 
 template<typename T>
 class ListSequence : public Sequence<T> {
 protected:
-    UnqPtr<LinkedList<T>> m_list;
+    SmartList<T>* m_list;
 
 public:
-    ListSequence() : m_list(new LinkedList<T>()) {}
+    // Default constructor
+    ListSequence() : m_list(new SmartList<T>()) {
+    }
 
-    ListSequence(const ListSequence<T> &seq)
-        : m_list(new LinkedList<T>(*seq.m_list.get())) {}
+    ListSequence(const ListSequence<T>& seq)
+        : m_list(new SmartList<T>(*seq.m_list)) {
+    }
 
-    explicit ListSequence(LinkedList<T>* list)
-        : m_list(list) {}
+    explicit ListSequence(SmartList<T>* list)
+        : m_list(list) {
+    }
 
     ListSequence(T* items, int size)
-        : m_list(new LinkedList<T>(items, size)) {}
+        : m_list(new SmartList<T>(items, size)) {
+    }
 
     explicit ListSequence(int size)
-        : m_list(new LinkedList<T>(size)) {}
+        : m_list(new SmartList<T>(size)) {
+    }
+
+    virtual ~ListSequence() {
+        delete m_list;
+    }
 
     T getFirst() const override {
         return m_list->getFirst();
@@ -41,23 +51,23 @@ public:
         return m_list->getSize();
     }
 
-    void set(const T &item, int index) override {
+    void set(const T& item, int index) override {
         m_list->set(item, index);
     }
 
-    void append(const T &item) override {
+    void append(const T& item) override {
         m_list->append(item);
     }
 
-    void prepend(const T &item) override {
+    void prepend(const T& item) override {
         m_list->prepend(item);
     }
 
-    void insertAt(const T &item, int index) override {
+    void insertAt(const T& item, int index) override {
         m_list->insertAt(item, index);
     }
 
-    friend std::ostream& operator<<(std::ostream &os, const ListSequence<T> &seq) {
+    friend std::ostream& operator<<(std::ostream& os, const ListSequence<T>& seq) {
         for (int i = 0; i < seq.getSize(); i++)
             os << seq.get(i) << " ";
         return os;
