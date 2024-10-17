@@ -224,6 +224,9 @@ MEPHI_LAB_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 MEPHI_LAB_SOURCE_DIR:STATIC=/home/dmitry/CLionProjects/labs
 
+//The directory containing a CMake configuration file for Qt5Widgets.
+Qt5Widgets_DIR:PATH=Qt5Widgets_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries

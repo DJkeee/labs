@@ -295,6 +295,7 @@ CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o: /home/dmitry/CLion
 
 CMakeFiles/MEPHI_LAB.dir/main.cpp.o: /home/dmitry/CLionProjects/labs/main.cpp \
   /home/dmitry/CLionProjects/labs/Pointers/UnqPtr.h \
+  /home/dmitry/CLionProjects/labs/Pointers/UnqPtr.h \
   /home/dmitry/CLionProjects/labs/Sequence/Sequence.h \
   /home/dmitry/CLionProjects/labs/Sequence/ArraySequence.h \
   /home/dmitry/CLionProjects/labs/Sequence/DinamicArray.h \

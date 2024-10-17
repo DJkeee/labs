@@ -1,6 +1,3 @@
-//
-// Created by dmitry on 10/12/24.
-//
 #include "gtest/gtest.h"
 #include "../Sequence/ArraySequence.h"
 
