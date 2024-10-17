@@ -233,4 +233,5 @@ CMakeFiles/MEPHI_LAB.dir/main.cpp.o: \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/../Pointers/UnqPtr.h \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/ListSequence.h \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/../Sequence/Sequence.h \
- /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/List.h
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/List.h \
+ /home/dmitry/CLionProjects/labs/Pointers/UnqPtr.h

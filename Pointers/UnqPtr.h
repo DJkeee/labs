@@ -20,12 +20,11 @@ public:
 
     UnqPtr& operator=(const UnqPtr& other) = delete;
 
-
     UnqPtr(UnqPtr&& other) noexcept : ptr(other.ptr) {
         other.ptr = nullptr;
     }
 
-    UnqPtr& operator=(UnqPtr&& other) noexcept {
+    UnqPtr& operator=(const UnqPtr&& other) noexcept {
         if (this != &other) {
             delete ptr;
             ptr = other.ptr;

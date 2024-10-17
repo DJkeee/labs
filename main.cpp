@@ -1,9 +1,9 @@
 #include "TimeComparator/TimeComparator.cpp"
+#include "Pointers/UnqPtr.h"
 
-int main() {
-    TimeComparator test;
-    test.compareListAndArrayList();
-    test.compareVectorAndArraySeq();
-
-    return 0;
-}
+    int main() {
+        TimeComparator tc;
+        tc.compareListAndArrayList();
+        tc.compareVectorAndArraySeq();
+        return 0;
+    }

@@ -129,29 +129,29 @@ MEPHI_LAB/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/build
 .PHONY : MEPHI_LAB/fast
 
-TimeComparator/TimeComparator.o: TimeComparator/TimeComparator.cpp.o
-.PHONY : TimeComparator/TimeComparator.o
+PointersTest/SmartPtrTest.o: PointersTest/SmartPtrTest.cpp.o
+.PHONY : PointersTest/SmartPtrTest.o
 
 # target to build an object file
-TimeComparator/TimeComparator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o
-.PHONY : TimeComparator/TimeComparator.cpp.o
+PointersTest/SmartPtrTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/SmartPtrTest.cpp.o
+.PHONY : PointersTest/SmartPtrTest.cpp.o
 
-TimeComparator/TimeComparator.i: TimeComparator/TimeComparator.cpp.i
-.PHONY : TimeComparator/TimeComparator.i
+PointersTest/SmartPtrTest.i: PointersTest/SmartPtrTest.cpp.i
+.PHONY : PointersTest/SmartPtrTest.i
 
 # target to preprocess a source file
-TimeComparator/TimeComparator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.i
-.PHONY : TimeComparator/TimeComparator.cpp.i
+PointersTest/SmartPtrTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/SmartPtrTest.cpp.i
+.PHONY : PointersTest/SmartPtrTest.cpp.i
 
-TimeComparator/TimeComparator.s: TimeComparator/TimeComparator.cpp.s
-.PHONY : TimeComparator/TimeComparator.s
+PointersTest/SmartPtrTest.s: PointersTest/SmartPtrTest.cpp.s
+.PHONY : PointersTest/SmartPtrTest.s
 
 # target to generate assembly for a file
-TimeComparator/TimeComparator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.s
-.PHONY : TimeComparator/TimeComparator.cpp.s
+PointersTest/SmartPtrTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/SmartPtrTest.cpp.s
+.PHONY : PointersTest/SmartPtrTest.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,9 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MEPHI_LAB"
-	@echo "... TimeComparator/TimeComparator.o"
-	@echo "... TimeComparator/TimeComparator.i"
-	@echo "... TimeComparator/TimeComparator.s"
+	@echo "... PointersTest/SmartPtrTest.o"
+	@echo "... PointersTest/SmartPtrTest.i"
+	@echo "... PointersTest/SmartPtrTest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

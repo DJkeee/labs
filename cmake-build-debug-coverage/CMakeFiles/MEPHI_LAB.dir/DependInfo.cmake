@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dmitry/CLionProjects/labs/TimeComparator/TimeComparator.cpp" "CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o" "gcc" "CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o.d"
+  "/home/dmitry/CLionProjects/labs/PointersTest/SmartPtrTest.cpp" "CMakeFiles/MEPHI_LAB.dir/PointersTest/SmartPtrTest.cpp.o" "gcc" "CMakeFiles/MEPHI_LAB.dir/PointersTest/SmartPtrTest.cpp.o.d"
   "/home/dmitry/CLionProjects/labs/main.cpp" "CMakeFiles/MEPHI_LAB.dir/main.cpp.o" "gcc" "CMakeFiles/MEPHI_LAB.dir/main.cpp.o.d"
   )
 
