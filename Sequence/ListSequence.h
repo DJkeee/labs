@@ -11,7 +11,6 @@ protected:
     SmartList<T>* m_list;
 
 public:
-    // Default constructor
     ListSequence() : m_list(new SmartList<T>()) {
     }
 

@@ -1,9 +1,6 @@
-#include "TimeComparator/TimeComparator.cpp"
-#include "Pointers/UnqPtr.h"
-
-    int main() {
-        TimeComparator tc;
-        tc.compareListAndArrayList();
-        tc.compareVectorAndArraySeq();
-        return 0;
-    }
+#include "Menu.h"
+int main() {
+    Menu<int> menu;
+    menu.compareOfSequences();
+    return 0;
+}

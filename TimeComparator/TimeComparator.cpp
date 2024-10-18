@@ -12,76 +12,70 @@
 #include <chrono>
 #include "../Sequence/ArraySequence.h"
 #include "../Sequence/ListSequence.h"
+#include "../Sequence/DinamicArray.h"
+#include "../Sequence/List.h"
 
 
+template <typename T>
 class TimeComparator {
 public:
-    template<typename Clock = std::chrono::high_resolution_clock>
-    auto timeSpent(const typename Clock::time_point& start, const typename Clock::time_point& end) const -> std::chrono::milliseconds {
-        return std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+    TimeComparator() {}
+
+    std::chrono::duration<double> timeDifference(std::chrono::high_resolution_clock::time_point start,
+                                                  std::chrono::high_resolution_clock::time_point end) {
+        return end - start;
     }
 
-    void out(const std::chrono::milliseconds& elapsed, const std::string& dataStructureName) const {
-        std::cout << "Время для " << dataStructureName << ": " << elapsed.count() << " мс\n";
+    void TestOfArrays(int size) {
+        ArraySequence<T> arrSeq;
+        DynamicArray<T> dynArr;
+        std::vector<T> testData(size);
+
+        for (int i = 0; i < size; ++i) {
+            testData[i] = static_cast<T>(i);
+        }
+
+        auto startInsertArr = std::chrono::high_resolution_clock::now();
+        for (const auto& item : testData) {
+            arrSeq.append(item);
+        }
+        auto endInsertArr = std::chrono::high_resolution_clock::now();
+        std::cout << "ArraySequence Insert Time: "
+                  << timeDifference(startInsertArr, endInsertArr).count() << " seconds\n";
+
+        auto startInsertDyn = std::chrono::high_resolution_clock::now();
+        for (const auto& item : testData) {
+            dynArr.append(item);
+        }
+        auto endInsertDyn = std::chrono::high_resolution_clock::now();
+        std::cout << "DynamicArray Insert Time: "
+                  << timeDifference(startInsertDyn, endInsertDyn).count() << " seconds\n";
     }
 
-    void compareVectorAndArraySeq() {
-        // Генератор случайных чисел
-        std::random_device rd;
-        std::mt19937 gen(rd());
-        std::uniform_int_distribution<> distrib(0, 100);
+    void TestOfLists(int size) {
+        ListSequence<T> listSeq;
+        RawList<T> rawList;
+        std::vector<T> testData(size);
 
-        // Измерение времени для std::vector
-        auto start = std::chrono::high_resolution_clock::now();
-        std::vector<int> vec;
-        for (int i = 0; i < 100000000; ++i) {
-            vec.push_back(distrib(gen));
+        // Generate test data
+        for (int i = 0; i < size; ++i) {
+            testData[i] = static_cast<T>(i);
         }
-        auto end = std::chrono::high_resolution_clock::now();
-        auto elapsed_vector = timeSpent(start, end);
-        out(elapsed_vector, "std::vector");
 
-        // Измерение времени для ArraySequence
-        start = std::chrono::high_resolution_clock::now();
-        ArraySequence<int> arraySeq;
-        for (int i = 0; i < 100000000; ++i) {
-            arraySeq.append(distrib(gen));
+        auto startInsertList = std::chrono::high_resolution_clock::now();
+        for (const auto& item : testData) {
+            listSeq.append(item);
         }
-        end = std::chrono::high_resolution_clock::now();
-        auto elapsed_arraySeq = timeSpent(start, end);
-        out(elapsed_arraySeq, "ArraySequence");
-    }
+        auto endInsertList = std::chrono::high_resolution_clock::now();
+        std::cout << "ListSequence Insert Time: "
+                  << timeDifference(startInsertList, endInsertList).count() << " seconds\n";
 
-    void compareListAndArrayList() {
-        // Генератор случайных чисел
-        std::random_device rd;
-        std::mt19937 gen(rd());
-        std::uniform_int_distribution<> distrib(0, 100);
-
-        for (int n = 1000; n <= 100000; n += 1000) {
-            // Измерение времени для std::list
-            auto start = std::chrono::high_resolution_clock::now();
-            std::list<int> list;
-            for (int i = 0; i < n; ++i) {
-                list.push_back(distrib(gen));
-            }
-            auto end = std::chrono::high_resolution_clock::now();
-            auto elapsed_list = timeSpent(start, end);
-            out(elapsed_list, "std::list with size " + std::to_string(n));
-
-            // Измерение времени для ArrayList
-            start = std::chrono::high_resolution_clock::now();
-            ListSequence<int> arrayList;
-            for (int i = 0; i < n; ++i) {
-                arrayList.append(distrib(gen));
-            }
-            end = std::chrono::high_resolution_clock::now();
-            auto elapsed_arrayList = timeSpent(start, end);
-            out(elapsed_arrayList, "ArrayList with size " + std::to_string(n));
+        auto startInsertRaw = std::chrono::high_resolution_clock::now();
+        for (const auto& item : testData) {
+            rawList.append(item);
         }
+        auto endInsertRaw = std::chrono::high_resolution_clock::now();
+        std::cout << "RawList Insert Time: "
+                  << timeDifference(startInsertRaw, endInsertRaw).count() << " seconds\n";
     }
 };
-
-
-
-

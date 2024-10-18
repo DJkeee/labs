@@ -228,9 +228,11 @@ CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o: \
  /usr/include/c++/14/pstl/execution_defs.h \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/ArraySequence.h \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/Sequence.h \
- /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/DinamicArray.h \
- /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/Errors.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/SmartDinArray.h \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/../Pointers/UnqPtr.h \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/ListSequence.h \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/../Sequence/Sequence.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/SmartList.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/DinamicArray.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/Errors.h \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/List.h

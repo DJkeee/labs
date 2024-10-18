@@ -10,15 +10,15 @@ class SmartList {
 private:
     struct Node {
         T item;
-        Node* next = nullptr; // Use raw pointer for next node
-        Node* prev = nullptr; // Use raw pointer for previous node
+        Node* next = nullptr;
+        Node* prev = nullptr;
 
         Node(const T& item) : item(item) {
         }
     };
 
-    Node* m_head = nullptr; // Use raw pointer for head
-    Node* m_tail = nullptr; // Use raw pointer for tail
+    Node* m_head = nullptr;
+    Node* m_tail = nullptr;
     int m_size = 0;
 
 public:
@@ -48,7 +48,7 @@ public:
         Node* ptr = m_head;
         while (ptr != nullptr) {
             Node* next = ptr->next;
-            delete ptr; // Delete each node
+            delete ptr;
             ptr = next;
         }
     }
@@ -85,21 +85,21 @@ public:
             m_tail->next = newNode;
             newNode->prev = m_tail;
         } else {
-            m_head = newNode; // Set head if the list is empty
+            m_head = newNode;
         }
-        m_tail = newNode; // Update tail
+        m_tail = newNode;
         m_size++;
     }
 
     void prepend(const T& item) {
         Node* newNode = new Node(item);
         if (m_head) {
-            newNode->next = m_head; // Set new node's next to current head
-            m_head->prev = newNode; // Set current head's prev to new node
+            newNode->next = m_head;
+            m_head->prev = newNode;
         }
-        m_head = newNode; // Update head
+        m_head = newNode;
         if (!m_tail) {
-            m_tail = newNode; // Update tail if list was empty
+            m_tail = newNode;
         }
         m_size++;
     }
@@ -107,11 +107,11 @@ public:
     void removeAt(int index) {
         if (index < 0 || index >= m_size) throw std::out_of_range("Index out of range");
         if (index == 0) {
-            m_head = m_head->next; // Move head
+            m_head = m_head->next;
             if (m_head) {
                 m_head->prev = nullptr;
             } else {
-                m_tail = nullptr; // List is now empty
+                m_tail = nullptr;
             }
         } else {
             Node* ptr = m_head;
@@ -121,9 +121,9 @@ public:
             if (ptr->next) {
                 ptr->next->prev = ptr;
             } else {
-                m_tail = ptr; // Update tail if removing last node
+                m_tail = ptr;
             }
-            delete toDelete; // Delete the node
+            delete toDelete;
         }
         m_size--;
     }
@@ -133,9 +133,9 @@ public:
 
 
         if (index == 0) {
-            prepend(item); // Insert at the beginning
+            prepend(item);
         } else if (index == m_size) {
-            append(item); // Insert at the end
+            append(item);
         } else {
             Node* newNode = new Node(item);
             Node* ptr = m_head;

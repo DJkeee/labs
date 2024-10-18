@@ -302,5 +302,4 @@ CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o: \
  /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/ListSequence.h \
  /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/../Pointers/UnqPtr.h \
  /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/../Sequence/Sequence.h \
- /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/List.h \
- /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/Errors.h
+ /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/SmartList.h

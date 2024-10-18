@@ -69,31 +69,47 @@ include CMakeFiles/MEPHI_LAB.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MEPHI_LAB.dir/flags.make
 
-CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
-CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o: /home/dmitry/CLionProjects/labs/SequenceTests/ListSequenceTest.cpp
-CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o -c /home/dmitry/CLionProjects/labs/SequenceTests/ListSequenceTest.cpp
+CMakeFiles/MEPHI_LAB.dir/main.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/main.cpp.o: /home/dmitry/CLionProjects/labs/main.cpp
+CMakeFiles/MEPHI_LAB.dir/main.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MEPHI_LAB.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/main.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/main.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/main.cpp.o -c /home/dmitry/CLionProjects/labs/main.cpp
 
-CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/SequenceTests/ListSequenceTest.cpp > CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.i
+CMakeFiles/MEPHI_LAB.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/main.cpp > CMakeFiles/MEPHI_LAB.dir/main.cpp.i
 
-CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/SequenceTests/ListSequenceTest.cpp -o CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.s
+CMakeFiles/MEPHI_LAB.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/main.cpp -o CMakeFiles/MEPHI_LAB.dir/main.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o: /home/dmitry/CLionProjects/labs/TimeComparator/TimeComparator.cpp
+CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o -c /home/dmitry/CLionProjects/labs/TimeComparator/TimeComparator.cpp
+
+CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/TimeComparator/TimeComparator.cpp > CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/TimeComparator/TimeComparator.cpp -o CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.s
 
 # Object files for target MEPHI_LAB
 MEPHI_LAB_OBJECTS = \
-"CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o"
+"CMakeFiles/MEPHI_LAB.dir/main.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o"
 
 # External object files for target MEPHI_LAB
 MEPHI_LAB_EXTERNAL_OBJECTS =
 
-MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/main.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o
 MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/build.make
 MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MEPHI_LAB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MEPHI_LAB"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MEPHI_LAB.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

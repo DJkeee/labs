@@ -1,7 +1,7 @@
 CMakeFiles/MEPHI_LAB.dir/main.cpp.o: \
  /home/dmitry/CLionProjects/labs/main.cpp /usr/include/stdc-predef.h \
- /home/dmitry/CLionProjects/labs/TimeComparator/TimeComparator.cpp \
- /usr/include/c++/14/iostream /usr/include/c++/14/bits/requires_hosted.h \
+ /home/dmitry/CLionProjects/labs/Menu.h /usr/include/c++/14/iostream \
+ /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -157,8 +157,9 @@ CMakeFiles/MEPHI_LAB.dir/main.cpp.o: \
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc /usr/include/c++/14/vector \
- /usr/include/c++/14/bits/stl_uninitialized.h \
+ /usr/include/c++/14/bits/istream.tcc \
+ /home/dmitry/CLionProjects/labs/TimeComparator/TimeComparator.cpp \
+ /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_uninitialized.h \
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/list \
@@ -232,6 +233,10 @@ CMakeFiles/MEPHI_LAB.dir/main.cpp.o: \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/../Pointers/UnqPtr.h \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/ListSequence.h \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/../Sequence/Sequence.h \
- /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/List.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/SmartList.h \
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/DinamicArray.h \
  /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/Errors.h \
- /home/dmitry/CLionProjects/labs/Pointers/UnqPtr.h
+ /home/dmitry/CLionProjects/labs/TimeComparator/../Sequence/List.h \
+ /home/dmitry/CLionProjects/labs/Input/PositiveInput.h \
+ /home/dmitry/CLionProjects/labs/Input/Input.h \
+ /home/dmitry/CLionProjects/labs/Input/Input.h

@@ -129,29 +129,53 @@ MEPHI_LAB/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/build
 .PHONY : MEPHI_LAB/fast
 
-SequenceTests/ListSequenceTest.o: SequenceTests/ListSequenceTest.cpp.o
-.PHONY : SequenceTests/ListSequenceTest.o
+TimeComparator/TimeComparator.o: TimeComparator/TimeComparator.cpp.o
+.PHONY : TimeComparator/TimeComparator.o
 
 # target to build an object file
-SequenceTests/ListSequenceTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o
-.PHONY : SequenceTests/ListSequenceTest.cpp.o
+TimeComparator/TimeComparator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.o
+.PHONY : TimeComparator/TimeComparator.cpp.o
 
-SequenceTests/ListSequenceTest.i: SequenceTests/ListSequenceTest.cpp.i
-.PHONY : SequenceTests/ListSequenceTest.i
+TimeComparator/TimeComparator.i: TimeComparator/TimeComparator.cpp.i
+.PHONY : TimeComparator/TimeComparator.i
 
 # target to preprocess a source file
-SequenceTests/ListSequenceTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.i
-.PHONY : SequenceTests/ListSequenceTest.cpp.i
+TimeComparator/TimeComparator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.i
+.PHONY : TimeComparator/TimeComparator.cpp.i
 
-SequenceTests/ListSequenceTest.s: SequenceTests/ListSequenceTest.cpp.s
-.PHONY : SequenceTests/ListSequenceTest.s
+TimeComparator/TimeComparator.s: TimeComparator/TimeComparator.cpp.s
+.PHONY : TimeComparator/TimeComparator.s
 
 # target to generate assembly for a file
-SequenceTests/ListSequenceTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.s
-.PHONY : SequenceTests/ListSequenceTest.cpp.s
+TimeComparator/TimeComparator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/TimeComparator/TimeComparator.cpp.s
+.PHONY : TimeComparator/TimeComparator.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MEPHI_LAB"
-	@echo "... SequenceTests/ListSequenceTest.o"
-	@echo "... SequenceTests/ListSequenceTest.i"
-	@echo "... SequenceTests/ListSequenceTest.s"
+	@echo "... TimeComparator/TimeComparator.o"
+	@echo "... TimeComparator/TimeComparator.i"
+	@echo "... TimeComparator/TimeComparator.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

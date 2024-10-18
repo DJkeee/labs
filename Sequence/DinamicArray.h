@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <stdexcept>
+#include <stdexcept>
 
 template<typename T>
 class DynamicArray {
@@ -31,7 +32,8 @@ private:
     }
 
 public:
-    DynamicArray() : m_size(0), m_capacity(0) {
+    DynamicArray() : m_size(0), m_capacity(1) {
+        m_data = new T[m_capacity];
     }
 
     DynamicArray(int size) : m_size(size), m_capacity(size) {
@@ -51,16 +53,6 @@ public:
     DynamicArray(const DynamicArray<T>& array) : m_size(array.m_size), m_capacity(array.m_capacity) {
         m_data = new T[m_capacity];
         for (int i = 0; i < m_size; ++i) {
-            m_data[i] = array.m_data[i];
-        }
-    }
-
-    DynamicArray(const DynamicArray<T>& array, int size) : m_size(size), m_capacity(size) {
-        if (size <= 0) throw std::length_error("Negative size is not allowed.");
-
-        if (size > array.m_size) throw std::out_of_range("Index out of range.");
-        m_data = new T[size];
-        for (int i = 0; i < size; ++i) {
             m_data[i] = array.m_data[i];
         }
     }
@@ -100,8 +92,11 @@ public:
     }
 
     void append(const T& value) {
-        copyOfMemory(m_size + 1);
-        m_data[m_size - 1] = value;
+        if (m_size >= m_capacity) {
+            copyOfMemory(m_capacity * 2);
+        }
+        m_data[m_size] = value;
+        m_size++;
     }
 
     bool operator==(const DynamicArray<T>& arr) const {
