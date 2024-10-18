@@ -5,13 +5,18 @@
 #include "../Sequence/Sequence.h"
 #include "SmartList.h"
 
+#include "Sequence.h"
+#include "SmartList.h" // Include the SmartList header
+#include "../Pointers/UnqPtr.h"
+
 template<typename T>
 class ListSequence : public Sequence<T> {
 protected:
-    SmartList<T>* m_list;
+    UnqPtr<SmartList<T>> m_list;
 
 public:
-    ListSequence() : m_list(new SmartList<T>()) {
+    ListSequence()
+        : m_list(new SmartList<T>()) {
     }
 
     ListSequence(const ListSequence<T>& seq)
@@ -31,7 +36,6 @@ public:
     }
 
     virtual ~ListSequence() {
-        delete m_list;
     }
 
     T getFirst() const override {
@@ -51,6 +55,8 @@ public:
     }
 
     void set(const T& item, int index) override {
+        if (index < 0 || index >= this->getSize())
+            throw std::out_of_range("Index out of range.");
         m_list->set(item, index);
     }
 
@@ -63,12 +69,15 @@ public:
     }
 
     void insertAt(const T& item, int index) override {
+        if (index < 0 || index > this->getSize())
+            throw std::out_of_range("Index out of range.");
         m_list->insertAt(item, index);
     }
 
     friend std::ostream& operator<<(std::ostream& os, const ListSequence<T>& seq) {
-        for (int i = 0; i < seq.getSize(); i++)
+        for (int i = 0; i < seq.getSize(); i++) {
             os << seq.get(i) << " ";
+        }
         return os;
     }
 };

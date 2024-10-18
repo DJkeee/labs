@@ -2,7 +2,7 @@
 #define SMARTDINARRAY_H
 #include "../Pointers/UnqPtr.h"
 
-   template<typename T>
+template<typename T>
 class SmartDynamicArray {
 private:
     T* m_data;

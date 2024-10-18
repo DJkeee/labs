@@ -8,10 +8,6 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -fsanitize=address -fsanit
 
 add_executable(MEPHI_LAB
         main.cpp
-        TimeComparator/TimeComparator.cpp
-        Menu.h
-        Input/PositiveInput.h
-
 )
 
 target_link_libraries(MEPHI_LAB gtest)

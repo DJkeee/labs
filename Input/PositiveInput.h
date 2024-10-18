@@ -7,21 +7,38 @@
 
 #include "Input.h"
 
+#include <iostream>
+#include <limits>
+
+
 template<typename T>
 class PositiveInput : public Input<T> {
 public:
     T getInput() override {
         T value;
-        std::cin >> value;
-
-        while (!validateInput(value)) {
-            std::cin >> value;
+        while (true) {
+            try {
+                if (!(std::cin >> value)) {
+                    throw std::invalid_argument("Invalid input");
+                }
+                if (std::cin.fail()) {
+                    throw std::invalid_argument("Input operation failed");
+                }
+                if (validateInput(value)) {
+                    return value;
+                } else {
+                    std::cout << "Please, enter the number of elements\n";
+                }
+            } catch (const std::exception& e) {
+                std::cerr << "Error: " << e.what() << std::endl;
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            }
         }
-        return value;
     }
 
     bool validateInput(const T& input) override {
-        return std::cin.good() && input > 0;
+        return input > 0;
     }
 };
 
