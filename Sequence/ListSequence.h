@@ -1,41 +1,43 @@
 #ifndef LAB2_3_LISTSEQUENCE_H
 #define LAB2_3_LISTSEQUENCE_H
 
-#include "../Pointers/UnqPtr.h"
 #include "../Sequence/Sequence.h"
-#include "SmartList.h"
-
-#include "Sequence.h"
-#include "SmartList.h" // Include the SmartList header
-#include "../Pointers/UnqPtr.h"
+#include "../Sequence/List.h"
+#include <stdexcept>
+#include <iostream>
+#include "../Pointers/SmartPtr.h"
 
 template<typename T>
 class ListSequence : public Sequence<T> {
 protected:
-    UnqPtr<SmartList<T>> m_list;
+    SmartPtr<List<T> > m_list;
 
 public:
     ListSequence()
-        : m_list(new SmartList<T>()) {
+        : m_list(new List<T>()) {
     }
 
     ListSequence(const ListSequence<T>& seq)
-        : m_list(new SmartList<T>(*seq.m_list)) {
+        : m_list(new List<T>(*seq.m_list)) {
     }
 
-    explicit ListSequence(SmartList<T>* list)
+    explicit ListSequence(SmartPtr<List<T> > list)
         : m_list(list) {
     }
 
     ListSequence(T* items, int size)
-        : m_list(new SmartList<T>(items, size)) {
+        : m_list(new List<T>(items, size)) {
     }
 
     explicit ListSequence(int size)
-        : m_list(new SmartList<T>(size)) {
+        : m_list(new List<T>(size)) {
     }
 
     virtual ~ListSequence() {
+    }
+
+    void removeLast() {
+        m_list->removeLast();
     }
 
     T getFirst() const override {
@@ -62,6 +64,10 @@ public:
 
     void append(const T& item) override {
         m_list->append(item);
+    }
+
+    void removeFirst() {
+        m_list->removeFirst();
     }
 
     void prepend(const T& item) override {

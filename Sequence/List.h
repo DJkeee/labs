@@ -5,7 +5,7 @@
 #include <stdexcept>
 
 template<typename T>
-class RawList {
+class List {
 private:
     struct Node {
         T item;
@@ -18,29 +18,29 @@ private:
     int m_size = 0;
 
 public:
-    RawList() = default;
+    List() = default;
 
-    explicit RawList(int size) : RawList() {
+    explicit List(int size) : List() {
         if (size < 0) throw std::length_error(NEGATIVE_SIZE_MESSAGE);
         for (int i = 0; i < size; i++) {
             append(T());
         }
     }
 
-    RawList(T* items, int size) : RawList() {
+    List(T* items, int size) : List() {
         if (size < 0) throw std::length_error(NEGATIVE_SIZE_MESSAGE);
         for (int i = 0; i < size; i++) {
             append(items[i]);
         }
     }
 
-    RawList(const RawList<T>& list) : RawList() {
+    List(const List<T>& list) : List() {
         for (int i = 0; i < list.m_size; i++) {
             append(list.get(i));
         }
     }
 
-    ~RawList() {
+    ~List() {
         Node* ptr = m_head;
         Node* next;
         while (ptr != nullptr) {
@@ -122,6 +122,35 @@ public:
         m_size--;
     }
 
+    void removeLast() {
+        if (m_size == 0) return;
+
+        Node* deletedNode = m_tail;
+        if (m_tail->prev != nullptr) {
+            m_tail = m_tail->prev;
+            m_tail->next = nullptr;
+        } else {
+            m_head = nullptr;
+            m_tail = nullptr;
+        }
+        delete deletedNode;
+        --m_size;
+    }
+
+    void removeFirst() {
+        if (m_size == 0) return;
+        Node* deletedNode = m_head;
+        if (m_head->next != nullptr) {
+            m_head = m_head->next;
+            m_head->prev = nullptr;
+        } else {
+            m_tail = nullptr;
+            m_head = nullptr;
+        }
+        delete deletedNode;
+        --m_size;
+    }
+
     void insertAt(const T& item, int index) {
         if (index < 0 || index > m_size) throw std::out_of_range(INDEX_OUT_OF_RANGE_MESSAGE);
         if (index == 0) {
@@ -138,7 +167,7 @@ public:
         }
     }
 
-    bool operator==(const RawList<T>& list) const {
+    bool operator==(const List<T>& list) const {
         if (m_size != list.m_size) return false;
         Node* ptr1 = m_head;
         Node* ptr2 = list.m_head;

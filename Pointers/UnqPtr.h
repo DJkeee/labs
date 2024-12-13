@@ -24,7 +24,7 @@ public:
         other.ptr = nullptr;
     }
 
-    UnqPtr& operator=(const UnqPtr&& other) noexcept {
+    UnqPtr& operator=(UnqPtr&& other) noexcept {
         if (this != &other) {
             delete ptr;
             ptr = other.ptr;
@@ -43,6 +43,11 @@ public:
 
     T* get() const {
         return ptr;
+    }
+
+    void reset(T* newPtr) {
+        delete ptr;
+        ptr = newPtr;
     }
 };
 

@@ -129,6 +129,30 @@ MEPHI_LAB/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/build
 .PHONY : MEPHI_LAB/fast
 
+Tests/SequenceTests/ListSequenceTest.o: Tests/SequenceTests/ListSequenceTest.cpp.o
+.PHONY : Tests/SequenceTests/ListSequenceTest.o
+
+# target to build an object file
+Tests/SequenceTests/ListSequenceTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o
+.PHONY : Tests/SequenceTests/ListSequenceTest.cpp.o
+
+Tests/SequenceTests/ListSequenceTest.i: Tests/SequenceTests/ListSequenceTest.cpp.i
+.PHONY : Tests/SequenceTests/ListSequenceTest.i
+
+# target to preprocess a source file
+Tests/SequenceTests/ListSequenceTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.i
+.PHONY : Tests/SequenceTests/ListSequenceTest.cpp.i
+
+Tests/SequenceTests/ListSequenceTest.s: Tests/SequenceTests/ListSequenceTest.cpp.s
+.PHONY : Tests/SequenceTests/ListSequenceTest.s
+
+# target to generate assembly for a file
+Tests/SequenceTests/ListSequenceTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.s
+.PHONY : Tests/SequenceTests/ListSequenceTest.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MEPHI_LAB"
+	@echo "... Tests/SequenceTests/ListSequenceTest.o"
+	@echo "... Tests/SequenceTests/ListSequenceTest.i"
+	@echo "... Tests/SequenceTests/ListSequenceTest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

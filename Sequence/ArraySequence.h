@@ -6,39 +6,37 @@
 #define LAB2_3_ARRAYSEQUENCE_H
 
 #include "Sequence.h"
-#include "SmartDinArray.h"
+#include "DinamicArray.h"
 #include "../Pointers/UnqPtr.h"
 
 
 template<typename T>
 class ArraySequence : public Sequence<T> {
 protected:
-    UnqPtr<SmartDynamicArray<T>> m_array;
+    UnqPtr<DynamicArray<T> > m_array;
 
 public:
     ArraySequence()
-        : m_array(new SmartDynamicArray<T>()) {
+        : m_array(new DynamicArray<T>()) {
     }
 
     ArraySequence(const ArraySequence<T>& seq)
-        : m_array(new SmartDynamicArray<T>(*seq.m_array)) {
+        : m_array(new DynamicArray<T>(*seq.m_array)) {
     }
 
-    ArraySequence(SmartDynamicArray<T>* array)
+    explicit ArraySequence(DynamicArray<T>* array)
         : m_array(array) {
     }
 
     ArraySequence(T* items, int size)
-        : m_array(new SmartDynamicArray<T>(items, size)) {
+        : m_array(new DynamicArray<T>(items, size)) {
     }
 
-    ArraySequence(int size)
-        : m_array(new SmartDynamicArray<T>(size)) {
+    explicit ArraySequence(int size)
+        : m_array(new DynamicArray<T>(size)) {
     }
 
-    virtual ~ArraySequence() {
-        // No need to delete m_array; UnqPtr handles it
-    }
+    virtual ~ArraySequence() = default;
 
     T getFirst() const override {
         return m_array->get(0);
