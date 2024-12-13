@@ -6,14 +6,12 @@
 #define MENU_H
 
 #include <iostream>
-#include "TimeComparator/TimeComparator.cpp"
 #include "Input/PositiveInput.h"
 #include "Input/Input.h"
 
 template<typename T>
 class Menu {
 private:
-    TimeComparator<T> time_comparator;
     Input<T>* input;
 
 public:
@@ -22,8 +20,6 @@ public:
         std::cout << "Please enter the number of elements to test speed  ";
         input = new PositiveInput<int>;
         int size = input->getInput();
-        time_comparator.TestOfArrays(size);
-        time_comparator.TestOfLists(size);
     }
 };
 

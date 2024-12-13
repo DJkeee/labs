@@ -300,8 +300,7 @@ CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o: \
  /usr/include/gtest/gtest-typed-test.h \
  /usr/include/gtest/gtest_pred_impl.h /usr/include/gtest/gtest_prod.h \
  /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/ListSequence.h \
- /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/../Pointers/UnqPtr.h \
  /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/../Sequence/Sequence.h \
- /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/SmartList.h \
- /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/../Pointers/smartPtr.h \
- /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/Sequence.h
+ /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/../Sequence/List.h \
+ /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/../Sequence/Errors.h \
+ /home/dmitry/CLionProjects/labs/SequenceTests/../Sequence/../Pointers/SmartPtr.h

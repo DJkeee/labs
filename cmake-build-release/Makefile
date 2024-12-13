@@ -129,6 +129,30 @@ MEPHI_LAB/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/build
 .PHONY : MEPHI_LAB/fast
 
+PointersTest/SharedPtrTest.o: PointersTest/SharedPtrTest.cpp.o
+.PHONY : PointersTest/SharedPtrTest.o
+
+# target to build an object file
+PointersTest/SharedPtrTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/SharedPtrTest.cpp.o
+.PHONY : PointersTest/SharedPtrTest.cpp.o
+
+PointersTest/SharedPtrTest.i: PointersTest/SharedPtrTest.cpp.i
+.PHONY : PointersTest/SharedPtrTest.i
+
+# target to preprocess a source file
+PointersTest/SharedPtrTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/SharedPtrTest.cpp.i
+.PHONY : PointersTest/SharedPtrTest.cpp.i
+
+PointersTest/SharedPtrTest.s: PointersTest/SharedPtrTest.cpp.s
+.PHONY : PointersTest/SharedPtrTest.s
+
+# target to generate assembly for a file
+PointersTest/SharedPtrTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/SharedPtrTest.cpp.s
+.PHONY : PointersTest/SharedPtrTest.cpp.s
+
 Sequence/RBTree.o: Sequence/RBTree.cpp.o
 .PHONY : Sequence/RBTree.o
 
@@ -153,29 +177,29 @@ Sequence/RBTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.s
 .PHONY : Sequence/RBTree.cpp.s
 
-Tests/SequenceTests/ListSequenceTest.o: Tests/SequenceTests/ListSequenceTest.cpp.o
-.PHONY : Tests/SequenceTests/ListSequenceTest.o
+SequenceTests/ListSequenceTest.o: SequenceTests/ListSequenceTest.cpp.o
+.PHONY : SequenceTests/ListSequenceTest.o
 
 # target to build an object file
-Tests/SequenceTests/ListSequenceTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o
-.PHONY : Tests/SequenceTests/ListSequenceTest.cpp.o
+SequenceTests/ListSequenceTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o
+.PHONY : SequenceTests/ListSequenceTest.cpp.o
 
-Tests/SequenceTests/ListSequenceTest.i: Tests/SequenceTests/ListSequenceTest.cpp.i
-.PHONY : Tests/SequenceTests/ListSequenceTest.i
+SequenceTests/ListSequenceTest.i: SequenceTests/ListSequenceTest.cpp.i
+.PHONY : SequenceTests/ListSequenceTest.i
 
 # target to preprocess a source file
-Tests/SequenceTests/ListSequenceTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.i
-.PHONY : Tests/SequenceTests/ListSequenceTest.cpp.i
+SequenceTests/ListSequenceTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.i
+.PHONY : SequenceTests/ListSequenceTest.cpp.i
 
-Tests/SequenceTests/ListSequenceTest.s: Tests/SequenceTests/ListSequenceTest.cpp.s
-.PHONY : Tests/SequenceTests/ListSequenceTest.s
+SequenceTests/ListSequenceTest.s: SequenceTests/ListSequenceTest.cpp.s
+.PHONY : SequenceTests/ListSequenceTest.s
 
 # target to generate assembly for a file
-Tests/SequenceTests/ListSequenceTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.s
-.PHONY : Tests/SequenceTests/ListSequenceTest.cpp.s
+SequenceTests/ListSequenceTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.s
+.PHONY : SequenceTests/ListSequenceTest.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -210,12 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MEPHI_LAB"
+	@echo "... PointersTest/SharedPtrTest.o"
+	@echo "... PointersTest/SharedPtrTest.i"
+	@echo "... PointersTest/SharedPtrTest.s"
 	@echo "... Sequence/RBTree.o"
 	@echo "... Sequence/RBTree.i"
 	@echo "... Sequence/RBTree.s"
-	@echo "... Tests/SequenceTests/ListSequenceTest.o"
-	@echo "... Tests/SequenceTests/ListSequenceTest.i"
-	@echo "... Tests/SequenceTests/ListSequenceTest.s"
+	@echo "... SequenceTests/ListSequenceTest.o"
+	@echo "... SequenceTests/ListSequenceTest.i"
+	@echo "... SequenceTests/ListSequenceTest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -153,6 +153,30 @@ Sequence/RBTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.s
 .PHONY : Sequence/RBTree.cpp.s
 
+Tests/PointersTest/SharedPtrTest.o: Tests/PointersTest/SharedPtrTest.cpp.o
+.PHONY : Tests/PointersTest/SharedPtrTest.o
+
+# target to build an object file
+Tests/PointersTest/SharedPtrTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.o
+.PHONY : Tests/PointersTest/SharedPtrTest.cpp.o
+
+Tests/PointersTest/SharedPtrTest.i: Tests/PointersTest/SharedPtrTest.cpp.i
+.PHONY : Tests/PointersTest/SharedPtrTest.i
+
+# target to preprocess a source file
+Tests/PointersTest/SharedPtrTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.i
+.PHONY : Tests/PointersTest/SharedPtrTest.cpp.i
+
+Tests/PointersTest/SharedPtrTest.s: Tests/PointersTest/SharedPtrTest.cpp.s
+.PHONY : Tests/PointersTest/SharedPtrTest.s
+
+# target to generate assembly for a file
+Tests/PointersTest/SharedPtrTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.s
+.PHONY : Tests/PointersTest/SharedPtrTest.cpp.s
+
 Tests/SequenceTests/ListSequenceTest.o: Tests/SequenceTests/ListSequenceTest.cpp.o
 .PHONY : Tests/SequenceTests/ListSequenceTest.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... Sequence/RBTree.o"
 	@echo "... Sequence/RBTree.i"
 	@echo "... Sequence/RBTree.s"
+	@echo "... Tests/PointersTest/SharedPtrTest.o"
+	@echo "... Tests/PointersTest/SharedPtrTest.i"
+	@echo "... Tests/PointersTest/SharedPtrTest.s"
 	@echo "... Tests/SequenceTests/ListSequenceTest.o"
 	@echo "... Tests/SequenceTests/ListSequenceTest.i"
 	@echo "... Tests/SequenceTests/ListSequenceTest.s"

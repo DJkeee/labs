@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/dmitry/CLionProjects/labs/PointersTest/SharedPtrTest.cpp" "CMakeFiles/MEPHI_LAB.dir/PointersTest/SharedPtrTest.cpp.o" "gcc" "CMakeFiles/MEPHI_LAB.dir/PointersTest/SharedPtrTest.cpp.o.d"
   "/home/dmitry/CLionProjects/labs/Sequence/RBTree.cpp" "CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o" "gcc" "CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o.d"
-  "/home/dmitry/CLionProjects/labs/Tests/SequenceTests/ListSequenceTest.cpp" "CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o" "gcc" "CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o.d"
+  "/home/dmitry/CLionProjects/labs/SequenceTests/ListSequenceTest.cpp" "CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o" "gcc" "CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o.d"
   "/home/dmitry/CLionProjects/labs/main.cpp" "CMakeFiles/MEPHI_LAB.dir/main.cpp.o" "gcc" "CMakeFiles/MEPHI_LAB.dir/main.cpp.o.d"
   )
 
