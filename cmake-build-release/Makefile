@@ -129,6 +129,30 @@ MEPHI_LAB/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/build
 .PHONY : MEPHI_LAB/fast
 
+Sequence/RBTree.o: Sequence/RBTree.cpp.o
+.PHONY : Sequence/RBTree.o
+
+# target to build an object file
+Sequence/RBTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o
+.PHONY : Sequence/RBTree.cpp.o
+
+Sequence/RBTree.i: Sequence/RBTree.cpp.i
+.PHONY : Sequence/RBTree.i
+
+# target to preprocess a source file
+Sequence/RBTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.i
+.PHONY : Sequence/RBTree.cpp.i
+
+Sequence/RBTree.s: Sequence/RBTree.cpp.s
+.PHONY : Sequence/RBTree.s
+
+# target to generate assembly for a file
+Sequence/RBTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.s
+.PHONY : Sequence/RBTree.cpp.s
+
 Tests/SequenceTests/ListSequenceTest.o: Tests/SequenceTests/ListSequenceTest.cpp.o
 .PHONY : Tests/SequenceTests/ListSequenceTest.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MEPHI_LAB"
+	@echo "... Sequence/RBTree.o"
+	@echo "... Sequence/RBTree.i"
+	@echo "... Sequence/RBTree.s"
 	@echo "... Tests/SequenceTests/ListSequenceTest.o"
 	@echo "... Tests/SequenceTests/ListSequenceTest.i"
 	@echo "... Tests/SequenceTests/ListSequenceTest.s"

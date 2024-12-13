@@ -10,7 +10,7 @@ add_executable(MEPHI_LAB
         Tests/SequenceTests/ListSequenceTest.cpp
         main.cpp
         Pointers/SmartPtr.h
-        Sequence/RedBlackTree.h
+        Sequence/RBTree.cpp
 )
 
 target_link_libraries(MEPHI_LAB gtest)
