@@ -1,14 +1,8 @@
-#include <gtest/internal/gtest-string.h>
+#include "labyrint/App/Game.cpp"
 
-#include "Sequence/RBTree.cpp"
-using namespace std;
 int main() {
-    RedBlackTree<int,string> tree;
-    tree.insert(1,"aa");
-    tree.insert(2,"bb");
-    tree.insert(3,"cc");
+    Game game = Game();
+    game.start();
 
-    tree.print();
 
-    return 0;
 }

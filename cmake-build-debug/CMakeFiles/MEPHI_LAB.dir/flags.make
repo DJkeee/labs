@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/usr/lib/x86_64-linux-gnu/wx/include/gtk3-unicode-3.2 -I/usr/include/wx-3.2
 
-CXX_FLAGS =  -fsanitize=address -fsanitize=undefined -g -std=gnu++20 -fdiagnostics-color=always
+CXX_FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -finput-charset=UTF-8 -fexec-charset=UTF-8
 

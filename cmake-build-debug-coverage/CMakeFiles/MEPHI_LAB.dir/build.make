@@ -69,24 +69,10 @@ include CMakeFiles/MEPHI_LAB.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MEPHI_LAB.dir/flags.make
 
-CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
-CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o: /home/dmitry/CLionProjects/labs/Tests/SequenceTests/ListSequenceTest.cpp
-CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o -c /home/dmitry/CLionProjects/labs/Tests/SequenceTests/ListSequenceTest.cpp
-
-CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/Tests/SequenceTests/ListSequenceTest.cpp > CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.i
-
-CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/Tests/SequenceTests/ListSequenceTest.cpp -o CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.s
-
 CMakeFiles/MEPHI_LAB.dir/main.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
 CMakeFiles/MEPHI_LAB.dir/main.cpp.o: /home/dmitry/CLionProjects/labs/main.cpp
 CMakeFiles/MEPHI_LAB.dir/main.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MEPHI_LAB.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MEPHI_LAB.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/main.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/main.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/main.cpp.o -c /home/dmitry/CLionProjects/labs/main.cpp
 
 CMakeFiles/MEPHI_LAB.dir/main.cpp.i: cmake_force
@@ -97,51 +83,289 @@ CMakeFiles/MEPHI_LAB.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/main.cpp -o CMakeFiles/MEPHI_LAB.dir/main.cpp.s
 
-CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
-CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o: /home/dmitry/CLionProjects/labs/Sequence/RBTree.cpp
-CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o -c /home/dmitry/CLionProjects/labs/Sequence/RBTree.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Maze/MazeGrid.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Maze/MazeGrid.cpp
 
-CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/Sequence/RBTree.cpp > CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.i
+CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Maze/MazeGrid.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.i
 
-CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/Sequence/RBTree.cpp -o CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.s
+CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Maze/MazeGrid.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.s
 
-CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
-CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.o: /home/dmitry/CLionProjects/labs/Tests/PointersTest/SharedPtrTest.cpp
-CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.o -c /home/dmitry/CLionProjects/labs/Tests/PointersTest/SharedPtrTest.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Primitives/Coordinate.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Primitives/Coordinate.cpp
 
-CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/Tests/PointersTest/SharedPtrTest.cpp > CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.i
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Primitives/Coordinate.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.i
 
-CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/Tests/PointersTest/SharedPtrTest.cpp -o CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.s
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Primitives/Coordinate.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Primitives/Cell.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Primitives/Cell.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Primitives/Cell.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Primitives/Cell.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Primitives/CellType.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Primitives/CellType.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Primitives/CellType.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Primitives/CellType.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Maze/Maze.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Maze/Maze.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Maze/Maze.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Maze/Maze.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Generators/IGenerator.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Generators/IGenerator.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Generators/IGenerator.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Generators/IGenerator.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Generators/TunelBasedGenerator.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Generators/TunelBasedGenerator.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Generators/TunelBasedGenerator.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Generators/TunelBasedGenerator.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Generators/BonusSetter.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Generators/BonusSetter.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Generators/BonusSetter.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Generators/BonusSetter.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Solvers/ISolver.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Solvers/ISolver.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Solvers/ISolver.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Solvers/ISolver.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Solvers/Astar.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Solvers/Astar.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Solvers/Astar.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Solvers/Astar.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Render.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Render.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Render.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Render.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Generators/RandDGen.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Generators/RandDGen.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Generators/RandDGen.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Generators/RandDGen.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Solvers/WaveSolver.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Solvers/WaveSolver.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Solvers/WaveSolver.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Solvers/WaveSolver.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/Inputs.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/Inputs.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/Inputs.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/Inputs.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/App/GameUI.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/App/GameUI.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/App/GameUI.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/App/GameUI.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/App/GameLogic.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/App/GameLogic.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/App/GameLogic.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/App/GameLogic.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.s
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.o: CMakeFiles/MEPHI_LAB.dir/flags.make
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.o: /home/dmitry/CLionProjects/labs/labyrint/App/Game.cpp
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.o: CMakeFiles/MEPHI_LAB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.o -MF CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.o.d -o CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.o -c /home/dmitry/CLionProjects/labs/labyrint/App/Game.cpp
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/CLionProjects/labs/labyrint/App/Game.cpp > CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.i
+
+CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/CLionProjects/labs/labyrint/App/Game.cpp -o CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.s
 
 # Object files for target MEPHI_LAB
 MEPHI_LAB_OBJECTS = \
-"CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o" \
 "CMakeFiles/MEPHI_LAB.dir/main.cpp.o" \
-"CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o" \
-"CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.o"
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.o" \
+"CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.o"
 
 # External object files for target MEPHI_LAB
 MEPHI_LAB_EXTERNAL_OBJECTS =
 
-MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/Tests/SequenceTests/ListSequenceTest.cpp.o
 MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/main.cpp.o
-MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o
-MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/Tests/PointersTest/SharedPtrTest.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.o
+MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.o
 MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/build.make
 MEPHI_LAB: CMakeFiles/MEPHI_LAB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable MEPHI_LAB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dmitry/CLionProjects/labs/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable MEPHI_LAB"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MEPHI_LAB.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

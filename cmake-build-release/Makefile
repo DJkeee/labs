@@ -129,77 +129,413 @@ MEPHI_LAB/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/build
 .PHONY : MEPHI_LAB/fast
 
-PointersTest/SharedPtrTest.o: PointersTest/SharedPtrTest.cpp.o
-.PHONY : PointersTest/SharedPtrTest.o
+labyrint/App/Game.o: labyrint/App/Game.cpp.o
+.PHONY : labyrint/App/Game.o
 
 # target to build an object file
-PointersTest/SharedPtrTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/SharedPtrTest.cpp.o
-.PHONY : PointersTest/SharedPtrTest.cpp.o
+labyrint/App/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.o
+.PHONY : labyrint/App/Game.cpp.o
 
-PointersTest/SharedPtrTest.i: PointersTest/SharedPtrTest.cpp.i
-.PHONY : PointersTest/SharedPtrTest.i
+labyrint/App/Game.i: labyrint/App/Game.cpp.i
+.PHONY : labyrint/App/Game.i
 
 # target to preprocess a source file
-PointersTest/SharedPtrTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/SharedPtrTest.cpp.i
-.PHONY : PointersTest/SharedPtrTest.cpp.i
+labyrint/App/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.i
+.PHONY : labyrint/App/Game.cpp.i
 
-PointersTest/SharedPtrTest.s: PointersTest/SharedPtrTest.cpp.s
-.PHONY : PointersTest/SharedPtrTest.s
+labyrint/App/Game.s: labyrint/App/Game.cpp.s
+.PHONY : labyrint/App/Game.s
 
 # target to generate assembly for a file
-PointersTest/SharedPtrTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/PointersTest/SharedPtrTest.cpp.s
-.PHONY : PointersTest/SharedPtrTest.cpp.s
+labyrint/App/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/App/Game.cpp.s
+.PHONY : labyrint/App/Game.cpp.s
 
-Sequence/RBTree.o: Sequence/RBTree.cpp.o
-.PHONY : Sequence/RBTree.o
+labyrint/App/GameLogic.o: labyrint/App/GameLogic.cpp.o
+.PHONY : labyrint/App/GameLogic.o
 
 # target to build an object file
-Sequence/RBTree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.o
-.PHONY : Sequence/RBTree.cpp.o
+labyrint/App/GameLogic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.o
+.PHONY : labyrint/App/GameLogic.cpp.o
 
-Sequence/RBTree.i: Sequence/RBTree.cpp.i
-.PHONY : Sequence/RBTree.i
+labyrint/App/GameLogic.i: labyrint/App/GameLogic.cpp.i
+.PHONY : labyrint/App/GameLogic.i
 
 # target to preprocess a source file
-Sequence/RBTree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.i
-.PHONY : Sequence/RBTree.cpp.i
+labyrint/App/GameLogic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.i
+.PHONY : labyrint/App/GameLogic.cpp.i
 
-Sequence/RBTree.s: Sequence/RBTree.cpp.s
-.PHONY : Sequence/RBTree.s
+labyrint/App/GameLogic.s: labyrint/App/GameLogic.cpp.s
+.PHONY : labyrint/App/GameLogic.s
 
 # target to generate assembly for a file
-Sequence/RBTree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/Sequence/RBTree.cpp.s
-.PHONY : Sequence/RBTree.cpp.s
+labyrint/App/GameLogic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameLogic.cpp.s
+.PHONY : labyrint/App/GameLogic.cpp.s
 
-SequenceTests/ListSequenceTest.o: SequenceTests/ListSequenceTest.cpp.o
-.PHONY : SequenceTests/ListSequenceTest.o
+labyrint/App/GameUI.o: labyrint/App/GameUI.cpp.o
+.PHONY : labyrint/App/GameUI.o
 
 # target to build an object file
-SequenceTests/ListSequenceTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.o
-.PHONY : SequenceTests/ListSequenceTest.cpp.o
+labyrint/App/GameUI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.o
+.PHONY : labyrint/App/GameUI.cpp.o
 
-SequenceTests/ListSequenceTest.i: SequenceTests/ListSequenceTest.cpp.i
-.PHONY : SequenceTests/ListSequenceTest.i
+labyrint/App/GameUI.i: labyrint/App/GameUI.cpp.i
+.PHONY : labyrint/App/GameUI.i
 
 # target to preprocess a source file
-SequenceTests/ListSequenceTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.i
-.PHONY : SequenceTests/ListSequenceTest.cpp.i
+labyrint/App/GameUI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.i
+.PHONY : labyrint/App/GameUI.cpp.i
 
-SequenceTests/ListSequenceTest.s: SequenceTests/ListSequenceTest.cpp.s
-.PHONY : SequenceTests/ListSequenceTest.s
+labyrint/App/GameUI.s: labyrint/App/GameUI.cpp.s
+.PHONY : labyrint/App/GameUI.s
 
 # target to generate assembly for a file
-SequenceTests/ListSequenceTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/SequenceTests/ListSequenceTest.cpp.s
-.PHONY : SequenceTests/ListSequenceTest.cpp.s
+labyrint/App/GameUI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/App/GameUI.cpp.s
+.PHONY : labyrint/App/GameUI.cpp.s
+
+labyrint/Generators/BonusSetter.o: labyrint/Generators/BonusSetter.cpp.o
+.PHONY : labyrint/Generators/BonusSetter.o
+
+# target to build an object file
+labyrint/Generators/BonusSetter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.o
+.PHONY : labyrint/Generators/BonusSetter.cpp.o
+
+labyrint/Generators/BonusSetter.i: labyrint/Generators/BonusSetter.cpp.i
+.PHONY : labyrint/Generators/BonusSetter.i
+
+# target to preprocess a source file
+labyrint/Generators/BonusSetter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.i
+.PHONY : labyrint/Generators/BonusSetter.cpp.i
+
+labyrint/Generators/BonusSetter.s: labyrint/Generators/BonusSetter.cpp.s
+.PHONY : labyrint/Generators/BonusSetter.s
+
+# target to generate assembly for a file
+labyrint/Generators/BonusSetter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/BonusSetter.cpp.s
+.PHONY : labyrint/Generators/BonusSetter.cpp.s
+
+labyrint/Generators/IGenerator.o: labyrint/Generators/IGenerator.cpp.o
+.PHONY : labyrint/Generators/IGenerator.o
+
+# target to build an object file
+labyrint/Generators/IGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.o
+.PHONY : labyrint/Generators/IGenerator.cpp.o
+
+labyrint/Generators/IGenerator.i: labyrint/Generators/IGenerator.cpp.i
+.PHONY : labyrint/Generators/IGenerator.i
+
+# target to preprocess a source file
+labyrint/Generators/IGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.i
+.PHONY : labyrint/Generators/IGenerator.cpp.i
+
+labyrint/Generators/IGenerator.s: labyrint/Generators/IGenerator.cpp.s
+.PHONY : labyrint/Generators/IGenerator.s
+
+# target to generate assembly for a file
+labyrint/Generators/IGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/IGenerator.cpp.s
+.PHONY : labyrint/Generators/IGenerator.cpp.s
+
+labyrint/Generators/RandDGen.o: labyrint/Generators/RandDGen.cpp.o
+.PHONY : labyrint/Generators/RandDGen.o
+
+# target to build an object file
+labyrint/Generators/RandDGen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.o
+.PHONY : labyrint/Generators/RandDGen.cpp.o
+
+labyrint/Generators/RandDGen.i: labyrint/Generators/RandDGen.cpp.i
+.PHONY : labyrint/Generators/RandDGen.i
+
+# target to preprocess a source file
+labyrint/Generators/RandDGen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.i
+.PHONY : labyrint/Generators/RandDGen.cpp.i
+
+labyrint/Generators/RandDGen.s: labyrint/Generators/RandDGen.cpp.s
+.PHONY : labyrint/Generators/RandDGen.s
+
+# target to generate assembly for a file
+labyrint/Generators/RandDGen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/RandDGen.cpp.s
+.PHONY : labyrint/Generators/RandDGen.cpp.s
+
+labyrint/Generators/TunelBasedGenerator.o: labyrint/Generators/TunelBasedGenerator.cpp.o
+.PHONY : labyrint/Generators/TunelBasedGenerator.o
+
+# target to build an object file
+labyrint/Generators/TunelBasedGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.o
+.PHONY : labyrint/Generators/TunelBasedGenerator.cpp.o
+
+labyrint/Generators/TunelBasedGenerator.i: labyrint/Generators/TunelBasedGenerator.cpp.i
+.PHONY : labyrint/Generators/TunelBasedGenerator.i
+
+# target to preprocess a source file
+labyrint/Generators/TunelBasedGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.i
+.PHONY : labyrint/Generators/TunelBasedGenerator.cpp.i
+
+labyrint/Generators/TunelBasedGenerator.s: labyrint/Generators/TunelBasedGenerator.cpp.s
+.PHONY : labyrint/Generators/TunelBasedGenerator.s
+
+# target to generate assembly for a file
+labyrint/Generators/TunelBasedGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Generators/TunelBasedGenerator.cpp.s
+.PHONY : labyrint/Generators/TunelBasedGenerator.cpp.s
+
+labyrint/Inputs.o: labyrint/Inputs.cpp.o
+.PHONY : labyrint/Inputs.o
+
+# target to build an object file
+labyrint/Inputs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.o
+.PHONY : labyrint/Inputs.cpp.o
+
+labyrint/Inputs.i: labyrint/Inputs.cpp.i
+.PHONY : labyrint/Inputs.i
+
+# target to preprocess a source file
+labyrint/Inputs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.i
+.PHONY : labyrint/Inputs.cpp.i
+
+labyrint/Inputs.s: labyrint/Inputs.cpp.s
+.PHONY : labyrint/Inputs.s
+
+# target to generate assembly for a file
+labyrint/Inputs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Inputs.cpp.s
+.PHONY : labyrint/Inputs.cpp.s
+
+labyrint/Maze/Maze.o: labyrint/Maze/Maze.cpp.o
+.PHONY : labyrint/Maze/Maze.o
+
+# target to build an object file
+labyrint/Maze/Maze.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.o
+.PHONY : labyrint/Maze/Maze.cpp.o
+
+labyrint/Maze/Maze.i: labyrint/Maze/Maze.cpp.i
+.PHONY : labyrint/Maze/Maze.i
+
+# target to preprocess a source file
+labyrint/Maze/Maze.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.i
+.PHONY : labyrint/Maze/Maze.cpp.i
+
+labyrint/Maze/Maze.s: labyrint/Maze/Maze.cpp.s
+.PHONY : labyrint/Maze/Maze.s
+
+# target to generate assembly for a file
+labyrint/Maze/Maze.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/Maze.cpp.s
+.PHONY : labyrint/Maze/Maze.cpp.s
+
+labyrint/Maze/MazeGrid.o: labyrint/Maze/MazeGrid.cpp.o
+.PHONY : labyrint/Maze/MazeGrid.o
+
+# target to build an object file
+labyrint/Maze/MazeGrid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.o
+.PHONY : labyrint/Maze/MazeGrid.cpp.o
+
+labyrint/Maze/MazeGrid.i: labyrint/Maze/MazeGrid.cpp.i
+.PHONY : labyrint/Maze/MazeGrid.i
+
+# target to preprocess a source file
+labyrint/Maze/MazeGrid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.i
+.PHONY : labyrint/Maze/MazeGrid.cpp.i
+
+labyrint/Maze/MazeGrid.s: labyrint/Maze/MazeGrid.cpp.s
+.PHONY : labyrint/Maze/MazeGrid.s
+
+# target to generate assembly for a file
+labyrint/Maze/MazeGrid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Maze/MazeGrid.cpp.s
+.PHONY : labyrint/Maze/MazeGrid.cpp.s
+
+labyrint/Primitives/Cell.o: labyrint/Primitives/Cell.cpp.o
+.PHONY : labyrint/Primitives/Cell.o
+
+# target to build an object file
+labyrint/Primitives/Cell.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.o
+.PHONY : labyrint/Primitives/Cell.cpp.o
+
+labyrint/Primitives/Cell.i: labyrint/Primitives/Cell.cpp.i
+.PHONY : labyrint/Primitives/Cell.i
+
+# target to preprocess a source file
+labyrint/Primitives/Cell.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.i
+.PHONY : labyrint/Primitives/Cell.cpp.i
+
+labyrint/Primitives/Cell.s: labyrint/Primitives/Cell.cpp.s
+.PHONY : labyrint/Primitives/Cell.s
+
+# target to generate assembly for a file
+labyrint/Primitives/Cell.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Cell.cpp.s
+.PHONY : labyrint/Primitives/Cell.cpp.s
+
+labyrint/Primitives/CellType.o: labyrint/Primitives/CellType.cpp.o
+.PHONY : labyrint/Primitives/CellType.o
+
+# target to build an object file
+labyrint/Primitives/CellType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.o
+.PHONY : labyrint/Primitives/CellType.cpp.o
+
+labyrint/Primitives/CellType.i: labyrint/Primitives/CellType.cpp.i
+.PHONY : labyrint/Primitives/CellType.i
+
+# target to preprocess a source file
+labyrint/Primitives/CellType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.i
+.PHONY : labyrint/Primitives/CellType.cpp.i
+
+labyrint/Primitives/CellType.s: labyrint/Primitives/CellType.cpp.s
+.PHONY : labyrint/Primitives/CellType.s
+
+# target to generate assembly for a file
+labyrint/Primitives/CellType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/CellType.cpp.s
+.PHONY : labyrint/Primitives/CellType.cpp.s
+
+labyrint/Primitives/Coordinate.o: labyrint/Primitives/Coordinate.cpp.o
+.PHONY : labyrint/Primitives/Coordinate.o
+
+# target to build an object file
+labyrint/Primitives/Coordinate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.o
+.PHONY : labyrint/Primitives/Coordinate.cpp.o
+
+labyrint/Primitives/Coordinate.i: labyrint/Primitives/Coordinate.cpp.i
+.PHONY : labyrint/Primitives/Coordinate.i
+
+# target to preprocess a source file
+labyrint/Primitives/Coordinate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.i
+.PHONY : labyrint/Primitives/Coordinate.cpp.i
+
+labyrint/Primitives/Coordinate.s: labyrint/Primitives/Coordinate.cpp.s
+.PHONY : labyrint/Primitives/Coordinate.s
+
+# target to generate assembly for a file
+labyrint/Primitives/Coordinate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Primitives/Coordinate.cpp.s
+.PHONY : labyrint/Primitives/Coordinate.cpp.s
+
+labyrint/Render.o: labyrint/Render.cpp.o
+.PHONY : labyrint/Render.o
+
+# target to build an object file
+labyrint/Render.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.o
+.PHONY : labyrint/Render.cpp.o
+
+labyrint/Render.i: labyrint/Render.cpp.i
+.PHONY : labyrint/Render.i
+
+# target to preprocess a source file
+labyrint/Render.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.i
+.PHONY : labyrint/Render.cpp.i
+
+labyrint/Render.s: labyrint/Render.cpp.s
+.PHONY : labyrint/Render.s
+
+# target to generate assembly for a file
+labyrint/Render.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Render.cpp.s
+.PHONY : labyrint/Render.cpp.s
+
+labyrint/Solvers/Astar.o: labyrint/Solvers/Astar.cpp.o
+.PHONY : labyrint/Solvers/Astar.o
+
+# target to build an object file
+labyrint/Solvers/Astar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.o
+.PHONY : labyrint/Solvers/Astar.cpp.o
+
+labyrint/Solvers/Astar.i: labyrint/Solvers/Astar.cpp.i
+.PHONY : labyrint/Solvers/Astar.i
+
+# target to preprocess a source file
+labyrint/Solvers/Astar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.i
+.PHONY : labyrint/Solvers/Astar.cpp.i
+
+labyrint/Solvers/Astar.s: labyrint/Solvers/Astar.cpp.s
+.PHONY : labyrint/Solvers/Astar.s
+
+# target to generate assembly for a file
+labyrint/Solvers/Astar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/Astar.cpp.s
+.PHONY : labyrint/Solvers/Astar.cpp.s
+
+labyrint/Solvers/ISolver.o: labyrint/Solvers/ISolver.cpp.o
+.PHONY : labyrint/Solvers/ISolver.o
+
+# target to build an object file
+labyrint/Solvers/ISolver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.o
+.PHONY : labyrint/Solvers/ISolver.cpp.o
+
+labyrint/Solvers/ISolver.i: labyrint/Solvers/ISolver.cpp.i
+.PHONY : labyrint/Solvers/ISolver.i
+
+# target to preprocess a source file
+labyrint/Solvers/ISolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.i
+.PHONY : labyrint/Solvers/ISolver.cpp.i
+
+labyrint/Solvers/ISolver.s: labyrint/Solvers/ISolver.cpp.s
+.PHONY : labyrint/Solvers/ISolver.s
+
+# target to generate assembly for a file
+labyrint/Solvers/ISolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/ISolver.cpp.s
+.PHONY : labyrint/Solvers/ISolver.cpp.s
+
+labyrint/Solvers/WaveSolver.o: labyrint/Solvers/WaveSolver.cpp.o
+.PHONY : labyrint/Solvers/WaveSolver.o
+
+# target to build an object file
+labyrint/Solvers/WaveSolver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.o
+.PHONY : labyrint/Solvers/WaveSolver.cpp.o
+
+labyrint/Solvers/WaveSolver.i: labyrint/Solvers/WaveSolver.cpp.i
+.PHONY : labyrint/Solvers/WaveSolver.i
+
+# target to preprocess a source file
+labyrint/Solvers/WaveSolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.i
+.PHONY : labyrint/Solvers/WaveSolver.cpp.i
+
+labyrint/Solvers/WaveSolver.s: labyrint/Solvers/WaveSolver.cpp.s
+.PHONY : labyrint/Solvers/WaveSolver.s
+
+# target to generate assembly for a file
+labyrint/Solvers/WaveSolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MEPHI_LAB.dir/build.make CMakeFiles/MEPHI_LAB.dir/labyrint/Solvers/WaveSolver.cpp.s
+.PHONY : labyrint/Solvers/WaveSolver.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -234,15 +570,57 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MEPHI_LAB"
-	@echo "... PointersTest/SharedPtrTest.o"
-	@echo "... PointersTest/SharedPtrTest.i"
-	@echo "... PointersTest/SharedPtrTest.s"
-	@echo "... Sequence/RBTree.o"
-	@echo "... Sequence/RBTree.i"
-	@echo "... Sequence/RBTree.s"
-	@echo "... SequenceTests/ListSequenceTest.o"
-	@echo "... SequenceTests/ListSequenceTest.i"
-	@echo "... SequenceTests/ListSequenceTest.s"
+	@echo "... labyrint/App/Game.o"
+	@echo "... labyrint/App/Game.i"
+	@echo "... labyrint/App/Game.s"
+	@echo "... labyrint/App/GameLogic.o"
+	@echo "... labyrint/App/GameLogic.i"
+	@echo "... labyrint/App/GameLogic.s"
+	@echo "... labyrint/App/GameUI.o"
+	@echo "... labyrint/App/GameUI.i"
+	@echo "... labyrint/App/GameUI.s"
+	@echo "... labyrint/Generators/BonusSetter.o"
+	@echo "... labyrint/Generators/BonusSetter.i"
+	@echo "... labyrint/Generators/BonusSetter.s"
+	@echo "... labyrint/Generators/IGenerator.o"
+	@echo "... labyrint/Generators/IGenerator.i"
+	@echo "... labyrint/Generators/IGenerator.s"
+	@echo "... labyrint/Generators/RandDGen.o"
+	@echo "... labyrint/Generators/RandDGen.i"
+	@echo "... labyrint/Generators/RandDGen.s"
+	@echo "... labyrint/Generators/TunelBasedGenerator.o"
+	@echo "... labyrint/Generators/TunelBasedGenerator.i"
+	@echo "... labyrint/Generators/TunelBasedGenerator.s"
+	@echo "... labyrint/Inputs.o"
+	@echo "... labyrint/Inputs.i"
+	@echo "... labyrint/Inputs.s"
+	@echo "... labyrint/Maze/Maze.o"
+	@echo "... labyrint/Maze/Maze.i"
+	@echo "... labyrint/Maze/Maze.s"
+	@echo "... labyrint/Maze/MazeGrid.o"
+	@echo "... labyrint/Maze/MazeGrid.i"
+	@echo "... labyrint/Maze/MazeGrid.s"
+	@echo "... labyrint/Primitives/Cell.o"
+	@echo "... labyrint/Primitives/Cell.i"
+	@echo "... labyrint/Primitives/Cell.s"
+	@echo "... labyrint/Primitives/CellType.o"
+	@echo "... labyrint/Primitives/CellType.i"
+	@echo "... labyrint/Primitives/CellType.s"
+	@echo "... labyrint/Primitives/Coordinate.o"
+	@echo "... labyrint/Primitives/Coordinate.i"
+	@echo "... labyrint/Primitives/Coordinate.s"
+	@echo "... labyrint/Render.o"
+	@echo "... labyrint/Render.i"
+	@echo "... labyrint/Render.s"
+	@echo "... labyrint/Solvers/Astar.o"
+	@echo "... labyrint/Solvers/Astar.i"
+	@echo "... labyrint/Solvers/Astar.s"
+	@echo "... labyrint/Solvers/ISolver.o"
+	@echo "... labyrint/Solvers/ISolver.i"
+	@echo "... labyrint/Solvers/ISolver.s"
+	@echo "... labyrint/Solvers/WaveSolver.o"
+	@echo "... labyrint/Solvers/WaveSolver.i"
+	@echo "... labyrint/Solvers/WaveSolver.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
